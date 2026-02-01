@@ -100,7 +100,7 @@ export default function ContactSection() {
                 Email
               </p>
               <a
-                href="mailto:hello@clinthasse.com"
+                href="mailto:clinthasse@gmail.com"
                 className="font-display"
                 style={{
                   fontSize: "1.5rem",
@@ -111,7 +111,7 @@ export default function ContactSection() {
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#d4a373")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "#fafafa")}
               >
-                hello@clinthasse.com
+                clinthasse@gmail.com
               </a>
             </div>
 
@@ -128,55 +128,10 @@ export default function ContactSection() {
                 Location
               </p>
               <p className="font-display" style={{ fontSize: "1.5rem" }}>
-                Your City, USA
+                St. Louis, Missouri, USA
               </p>
             </div>
 
-            <div>
-              <p
-                style={{
-                  fontSize: "0.75rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: "#c41e3a",
-                  marginBottom: "1rem",
-                }}
-              >
-                Follow
-              </p>
-              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-                {[
-                  { name: "Instagram", href: "#" },
-                  { name: "Twitter", href: "#" },
-                  { name: "Apple Music", href: "https://music.apple.com/us/artist/clint-hasse/1316269529" },
-                ].map((social) => (
-                  <a
-                    key={social.name}
-                    href={social.href}
-                    target={social.href.startsWith("http") ? "_blank" : undefined}
-                    rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    style={{
-                      padding: "0.75rem 1.25rem",
-                      border: "1px solid #333",
-                      color: "#fafafa",
-                      textDecoration: "none",
-                      fontSize: "0.875rem",
-                      transition: "all 0.3s",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = "#d4a373";
-                      e.currentTarget.style.color = "#d4a373";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = "#333";
-                      e.currentTarget.style.color = "#fafafa";
-                    }}
-                  >
-                    {social.name}
-                  </a>
-                ))}
-              </div>
-            </div>
           </motion.div>
 
           {/* Contact Form */}

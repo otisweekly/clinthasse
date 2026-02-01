@@ -74,7 +74,7 @@ export default function Footer() {
                 </h3>
                 <div style={{ marginBottom: "1.5rem" }}>
                   <p className="font-display" style={{ fontSize: "1.125rem", marginBottom: "0.25rem" }}>
-                    KSDK NewsChannel 5 / Gannett
+                    5 On Your Side KSDK/Tegna
                   </p>
                   <p style={{ color: "#888", fontSize: "0.875rem" }}>
                     Broadcast & Digital Marketing
@@ -85,7 +85,7 @@ export default function Footer() {
                     KMOX Radio
                   </p>
                   <p style={{ color: "#888", fontSize: "0.875rem" }}>
-                    Voiceover Artist
+                    Sales Management and Voiceover Artist
                   </p>
                 </div>
                 <div>
@@ -175,10 +175,10 @@ export default function Footer() {
                 </h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
                   <a
-                    href="mailto:hello@clinthasse.com"
+                    href="mailto:clinthasse@gmail.com"
                     style={{ color: "#fafafa", textDecoration: "none", fontSize: "0.875rem" }}
                   >
-                    hello@clinthasse.com
+                    clinthasse@gmail.com
                   </a>
                   <a
                     href="https://music.apple.com/us/artist/clint-hasse/1316269529"

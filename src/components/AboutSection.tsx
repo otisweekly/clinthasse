@@ -97,10 +97,11 @@ export default function AboutSection() {
                 fontWeight: 300,
                 marginBottom: "1.5rem",
                 lineHeight: 1.15,
+                color: "#d4b896",
               }}
             >
               Broadcaster, Musician &<br />
-              <span style={{ fontStyle: "italic", color: "#d4a373" }}>Visual Artist</span>
+              <span style={{ fontStyle: "italic" }}>Visual Artist</span>
             </h2>
 
             <div style={{ borderTop: "1px solid #222", paddingTop: "1.5rem" }}>
@@ -117,8 +118,8 @@ export default function AboutSection() {
               </p>
 
               <p style={{ color: "#888", lineHeight: 1.8, marginBottom: "1.25rem", fontSize: "0.95rem" }}>
-                Currently with KSDK NewsChannel 5 / Gannett handling broadcast and digital marketing,
-                and lending his baritone voice to KMOX Radio, Clint brings decades of experience
+                Currently with 5 On Your Side KSDK/Tegna handling broadcast and digital marketing.
+                At KMOX Radio, Sales Management and Voiceover Artist. Clint brings decades of experience
                 in commercial writing, producing, and voiceover work.
               </p>
 
@@ -152,7 +153,7 @@ export default function AboutSection() {
                 >
                   Based in
                 </p>
-                <p className="font-display" style={{ fontSize: "1.1rem" }}>
+                <p className="font-display" style={{ fontSize: "1.1rem", color: "#d4b896" }}>
                   St. Louis, MO
                 </p>
               </div>
@@ -168,7 +169,7 @@ export default function AboutSection() {
                 >
                   Current Work
                 </p>
-                <p className="font-display" style={{ fontSize: "1.1rem" }}>
+                <p className="font-display" style={{ fontSize: "1.1rem", color: "#d4b896" }}>
                   KSDK / Swing DeVille
                 </p>
               </div>
@@ -188,7 +189,7 @@ export default function AboutSection() {
                   fontSize: "1.1rem",
                   fontStyle: "italic",
                   lineHeight: 1.5,
-                  color: "#aaa",
+                  color: "#d4b896",
                 }}
               >
                 &ldquo;Every song tells a story. Every photograph captures a moment that will never come again.&rdquo;

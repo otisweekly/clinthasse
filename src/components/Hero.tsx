@@ -30,74 +30,19 @@ export default function Hero() {
       >
         {/* Left: Content */}
         <div
-          className="section-padding"
           style={{
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
+            justifyContent: "flex-start",
             position: "relative",
             zIndex: 10,
             paddingTop: "120px",
             paddingBottom: "60px",
+            paddingLeft: "24px",
+            paddingRight: "24px",
+            maxWidth: "700px",
           }}
         >
-          {/* Intro label */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            style={{ marginBottom: "1.5rem" }}
-          >
-            <p
-              style={{
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-                letterSpacing: "0.25em",
-                color: "#888",
-                display: "flex",
-                alignItems: "center",
-                gap: "1rem",
-              }}
-            >
-              <span style={{ width: "40px", height: "1px", background: "#c41e3a" }} />
-              St. Louis, Missouri
-            </p>
-          </motion.div>
-
-          {/* Name */}
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.15 }}
-            className="font-display"
-            style={{
-              fontSize: "clamp(3rem, 8vw, 6rem)",
-              fontWeight: 300,
-              lineHeight: 0.9,
-              letterSpacing: "-0.02em",
-              marginBottom: "0.25em",
-            }}
-          >
-            Clint
-          </motion.h1>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.25 }}
-            className="font-display"
-            style={{
-              fontSize: "clamp(3rem, 8vw, 6rem)",
-              fontWeight: 300,
-              lineHeight: 0.9,
-              letterSpacing: "-0.02em",
-              fontStyle: "italic",
-              color: "#d4a373",
-            }}
-          >
-            Hasse
-          </motion.h1>
-
           {/* Role tags */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -105,21 +50,22 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             style={{
               display: "flex",
-              gap: "0.75rem",
-              marginTop: "2rem",
-              flexWrap: "wrap",
+              gap: "1rem",
+              marginTop: "0",
+              flexWrap: "nowrap",
             }}
           >
-            {["Broadcaster", "Musician", "Photographer"].map((role) => (
+            {["Photographer", "Musician", "Broadcaster"].map((role) => (
               <span
                 key={role}
                 style={{
-                  padding: "0.5rem 1rem",
-                  border: "1px solid #333",
-                  fontSize: "0.7rem",
+                  padding: "0.75rem 1.5rem",
+                  border: "2px solid #ffffff",
+                  fontSize: "1rem",
+                  fontWeight: 600,
                   textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: "#888",
+                  letterSpacing: "0.15em",
+                  color: "#ffffff",
                 }}
               >
                 {role}
@@ -132,15 +78,17 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
+            className="font-display"
             style={{
               marginTop: "2rem",
-              fontSize: "1rem",
-              color: "#666",
-              maxWidth: "380px",
-              lineHeight: 1.7,
+              fontSize: "1.25rem",
+              color: "#ffffff",
+              maxWidth: "420px",
+              lineHeight: 1.6,
+              fontStyle: "italic",
             }}
           >
-            Four decades of storytelling through broadcast, gypsy jazz, and the lens.
+            Four decades of storytelling through music, broadcast, and photography.
           </motion.p>
 
           {/* CTAs */}
@@ -158,13 +106,13 @@ export default function Hero() {
             <a
               href="#work"
               style={{
-                padding: "0.875rem 2rem",
+                padding: "1rem 2.5rem",
                 background: "#fafafa",
                 color: "#0a0a0a",
                 textDecoration: "none",
-                fontSize: "0.75rem",
-                fontWeight: 500,
-                letterSpacing: "0.05em",
+                fontSize: "1rem",
+                fontWeight: 700,
+                letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 transition: "all 0.3s",
               }}
@@ -182,13 +130,13 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                padding: "0.875rem 2rem",
-                border: "1px solid #444",
-                color: "#fafafa",
+                padding: "1rem 2.5rem",
+                border: "2px solid #ffffff",
+                color: "#ffffff",
                 textDecoration: "none",
-                fontSize: "0.75rem",
-                fontWeight: 500,
-                letterSpacing: "0.05em",
+                fontSize: "1rem",
+                fontWeight: 700,
+                letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 transition: "all 0.3s",
               }}
@@ -204,6 +152,48 @@ export default function Hero() {
               Listen Now
             </a>
           </motion.div>
+
+          {/* Navigation Links */}
+          <motion.nav
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            style={{
+              display: "flex",
+              gap: "2.5rem",
+              marginTop: "3rem",
+              flexWrap: "nowrap",
+            }}
+          >
+            {[
+              { label: "Work", href: "#work" },
+              { label: "Music", href: "#music" },
+              { label: "About", href: "#about" },
+              { label: "Contact", href: "#contact" },
+            ].map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="font-display"
+                style={{
+                  color: "#ffffff",
+                  textDecoration: "none",
+                  fontSize: "1.5rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.05em",
+                  transition: "opacity 0.3s",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.opacity = "0.7";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.opacity = "1";
+                }}
+              >
+                {link.label}
+              </a>
+            ))}
+          </motion.nav>
         </div>
 
         {/* Right: Image collage */}
@@ -286,7 +276,7 @@ export default function Hero() {
               fontSize: "0.65rem",
               textTransform: "uppercase",
               letterSpacing: "0.3em",
-              color: "#444",
+              color: "#ffffff",
             }}
           >
             St. Louis • 2024
@@ -323,13 +313,13 @@ export default function Hero() {
           gap: "0.5rem",
         }}
       >
-        <span style={{ fontSize: "0.6rem", textTransform: "uppercase", letterSpacing: "0.2em", color: "#555" }}>
+        <span style={{ fontSize: "0.6rem", textTransform: "uppercase", letterSpacing: "0.2em", color: "#ffffff" }}>
           Scroll
         </span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          style={{ width: "1px", height: "30px", background: "linear-gradient(to bottom, #444, transparent)" }}
+          style={{ width: "1px", height: "30px", background: "linear-gradient(to bottom, #ffffff, transparent)" }}
         />
       </motion.div>
     </section>

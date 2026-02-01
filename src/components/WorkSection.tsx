@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
-    title: "David Eilert",
+    title: "Grain Elevator Operator",
     category: "Portrait",
     image: "/images/david-eilert.jpg",
   },
@@ -67,9 +67,9 @@ export default function WorkSection() {
           </p>
           <h2
             className="font-display"
-            style={{ fontSize: "clamp(2rem, 5vw, 4rem)", fontWeight: 400 }}
+            style={{ fontSize: "clamp(2rem, 5vw, 4rem)", fontWeight: 400, color: "#d4b896" }}
           >
-            Photography & <span style={{ fontStyle: "italic", color: "#d4a373" }}>Visual Stories</span>
+            Photography & <span style={{ fontStyle: "italic" }}>Visual Stories</span>
           </h2>
         </motion.div>
 
@@ -106,6 +106,7 @@ export default function WorkSection() {
                     width: "100%",
                     height: "100%",
                     objectFit: "cover",
+                    objectPosition: "top center",
                     transition: "transform 0.6s ease",
                   }}
                   onMouseEnter={(e) => {
@@ -123,20 +124,9 @@ export default function WorkSection() {
                   }}
                 />
               </div>
-              <p
-                style={{
-                  fontSize: "0.75rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: "#c41e3a",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                {project.category}
-              </p>
               <h3
                 className="font-display"
-                style={{ fontSize: "1.5rem", fontWeight: 400 }}
+                style={{ fontSize: "1.5rem", fontWeight: 400, color: "#d4b896" }}
               >
                 {project.title}
               </h3>

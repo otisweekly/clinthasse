@@ -66,9 +66,9 @@ export default function MusicSection() {
           </p>
           <h2
             className="font-display"
-            style={{ fontSize: "clamp(2rem, 5vw, 4rem)", fontWeight: 400 }}
+            style={{ fontSize: "clamp(2rem, 5vw, 4rem)", fontWeight: 400, color: "#d4b896" }}
           >
-            Music & <span style={{ fontStyle: "italic", color: "#d4a373" }}>Sound</span>
+            Music & <span style={{ fontStyle: "italic" }}>Sound</span>
           </h2>
         </motion.div>
 
@@ -155,7 +155,7 @@ export default function MusicSection() {
             >
               Album • 2017
             </p>
-            <h3 className="font-display" style={{ fontSize: "2rem", marginBottom: "1rem" }}>
+            <h3 className="font-display" style={{ fontSize: "2rem", marginBottom: "1rem", color: "#d4b896" }}>
               Inside Nashville
             </h3>
             <p style={{ color: "#888", lineHeight: 1.7, marginBottom: "2rem" }}>
@@ -276,7 +276,7 @@ export default function MusicSection() {
                     <span style={{ fontSize: "0.75rem", marginLeft: "2px" }}>▶</span>
                   </div>
                   <div style={{ flex: 1 }}>
-                    <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.25rem" }}>
+                    <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.25rem", color: "#d4b896" }}>
                       {track.title}
                     </h4>
                   </div>
