@@ -101,8 +101,8 @@ export default function MusicSection() {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&q=80"
-                alt="Album artwork"
+                src="/images/drummer-snare.jpg"
+                alt="The Drummer - Hand on Snare"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -117,7 +117,7 @@ export default function MusicSection() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  background: "rgba(0,0,0,0.3)",
+                  background: "rgba(0,0,0,0.2)",
                 }}
               >
                 <div

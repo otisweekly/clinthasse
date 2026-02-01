@@ -40,13 +40,13 @@ export default function AboutSection() {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?w=600&q=80"
+                src="/images/clint-hasse-portrait.jpg"
                 alt="Clint Hasse"
                 style={{
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  filter: "grayscale(20%)",
+                  objectPosition: "top center",
                 }}
               />
               {/* Red accent corner */}
@@ -62,7 +62,7 @@ export default function AboutSection() {
               />
             </div>
             <p style={{ marginTop: "1rem", fontSize: "0.7rem", color: "#555", letterSpacing: "0.05em" }}>
-              Photo: Placeholder — Add your portrait
+              October 2025
             </p>
           </motion.div>
 

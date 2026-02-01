@@ -11,7 +11,9 @@ export default function Hero() {
         gridTemplateColumns: "1fr",
         position: "relative",
         overflow: "hidden",
-        background: "#0a0a0a",
+        backgroundImage: "url(/images/clint-hasse-portrait.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "top center",
       }}
     >
       {/* Content wrapper - matches nav max-width */}
@@ -227,21 +229,13 @@ export default function Hero() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?w=800&q=80"
-              alt="Musician portrait"
+              src="/images/clint-hasse-portrait.jpg"
+              alt="Clint Hasse portrait"
               style={{
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
-                filter: "grayscale(30%) contrast(1.1)",
-              }}
-            />
-            {/* Overlay gradient */}
-            <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                background: "linear-gradient(to top, rgba(10,10,10,0.4) 0%, transparent 50%)",
+                objectPosition: "top center",
               }}
             />
           </div>
@@ -259,13 +253,12 @@ export default function Hero() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=400&q=80"
-              alt="Guitar detail"
+              src="/images/clint-rolleiflex.jpg"
+              alt="Clint with Rolleiflex camera"
               style={{
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
-                filter: "grayscale(40%)",
               }}
             />
           </div>
@@ -296,7 +289,7 @@ export default function Hero() {
               color: "#444",
             }}
           >
-            Inside Nashville • 2017
+            St. Louis • 2024
           </div>
         </motion.div>
       </div>
@@ -307,10 +300,10 @@ export default function Hero() {
         style={{
           position: "absolute",
           inset: 0,
-          opacity: 0.15,
-          backgroundImage: "url(https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?w=800&q=80)",
+          opacity: 0.25,
+          backgroundImage: "url(/images/clint-hasse-portrait.jpg)",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top center",
         }}
       />
 

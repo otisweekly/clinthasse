@@ -5,27 +5,27 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
-    title: "Urban Landscapes",
-    category: "Photography",
-    image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80",
+    title: "David Eilert",
+    category: "Portrait",
+    image: "/images/david-eilert.jpg",
   },
   {
     id: 2,
-    title: "Quiet Moments",
-    category: "Photography",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    title: "The Steel Guitar Builder",
+    category: "Artisan",
+    image: "/images/steel-guitar-builder.jpg",
   },
   {
     id: 3,
-    title: "Night Sessions",
-    category: "Music",
-    image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80",
+    title: "Visions of Chouteau's Landing",
+    category: "Landscape",
+    image: "/images/chouteaus-landing.jpg",
   },
   {
     id: 4,
-    title: "Light & Shadow",
+    title: "MacArthur at Twilight",
     category: "Photography",
-    image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&q=80",
+    image: "/images/macarthur-twilight.jpg",
   },
 ];
 
@@ -119,7 +119,7 @@ export default function WorkSection() {
                   style={{
                     position: "absolute",
                     inset: 0,
-                    background: "linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 50%)",
+                    background: "linear-gradient(to top, rgba(0,0,0,0.2) 0%, transparent 50%)",
                   }}
                 />
               </div>
