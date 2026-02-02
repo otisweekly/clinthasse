@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const projects = [
   {
@@ -138,6 +139,33 @@ const projects = [
 ];
 
 export default function WorkSection() {
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
+  const openLightbox = (index: number) => setSelectedIndex(index);
+  const closeLightbox = () => setSelectedIndex(null);
+  const goNext = () => setSelectedIndex((prev) => (prev !== null ? (prev + 1) % projects.length : null));
+  const goPrev = () => setSelectedIndex((prev) => (prev !== null ? (prev - 1 + projects.length) % projects.length : null));
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (selectedIndex === null) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowRight") goNext();
+      if (e.key === "ArrowLeft") goPrev();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedIndex]);
+
+  useEffect(() => {
+    if (selectedIndex !== null) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [selectedIndex]);
+
   return (
     <section
       id="work"
@@ -196,6 +224,7 @@ export default function WorkSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
+              onClick={() => openLightbox(index)}
               style={{
                 cursor: "pointer",
                 breakInside: "avoid",
@@ -288,6 +317,140 @@ export default function WorkSection() {
           </a>
         </motion.div>
       </div>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {selectedIndex !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={closeLightbox}
+            style={{
+              position: "fixed",
+              inset: 0,
+              zIndex: 9999,
+              background: "rgba(0, 0, 0, 0.95)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "2rem",
+            }}
+          >
+            {/* Close button */}
+            <button
+              onClick={closeLightbox}
+              style={{
+                position: "absolute",
+                top: "1.5rem",
+                right: "1.5rem",
+                background: "none",
+                border: "none",
+                color: "#fff",
+                fontSize: "2rem",
+                cursor: "pointer",
+                padding: "0.5rem",
+                lineHeight: 1,
+                opacity: 0.7,
+                transition: "opacity 0.2s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.7")}
+            >
+              ×
+            </button>
+
+            {/* Previous button */}
+            <button
+              onClick={(e) => { e.stopPropagation(); goPrev(); }}
+              style={{
+                position: "absolute",
+                left: "1.5rem",
+                top: "50%",
+                transform: "translateY(-50%)",
+                background: "none",
+                border: "none",
+                color: "#fff",
+                fontSize: "2.5rem",
+                cursor: "pointer",
+                padding: "1rem",
+                opacity: 0.7,
+                transition: "opacity 0.2s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.7")}
+            >
+              ‹
+            </button>
+
+            {/* Next button */}
+            <button
+              onClick={(e) => { e.stopPropagation(); goNext(); }}
+              style={{
+                position: "absolute",
+                right: "1.5rem",
+                top: "50%",
+                transform: "translateY(-50%)",
+                background: "none",
+                border: "none",
+                color: "#fff",
+                fontSize: "2.5rem",
+                cursor: "pointer",
+                padding: "1rem",
+                opacity: 0.7,
+                transition: "opacity 0.2s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.7")}
+            >
+              ›
+            </button>
+
+            {/* Image container */}
+            <motion.div
+              key={selectedIndex}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                maxWidth: "90vw",
+                maxHeight: "85vh",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src={projects[selectedIndex].image}
+                alt={projects[selectedIndex].title}
+                style={{
+                  maxWidth: "100%",
+                  maxHeight: "75vh",
+                  objectFit: "contain",
+                }}
+              />
+              <h3
+                className="font-display"
+                style={{
+                  marginTop: "1.5rem",
+                  fontSize: "1.5rem",
+                  fontWeight: 400,
+                  color: "#d4b896",
+                  textAlign: "center",
+                }}
+              >
+                {projects[selectedIndex].title}
+              </h3>
+              <p style={{ color: "#666", fontSize: "0.875rem", marginTop: "0.5rem" }}>
+                {selectedIndex + 1} / {projects.length}
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
