@@ -27,6 +27,114 @@ const projects = [
     category: "Photography",
     image: "/images/macarthur-twilight.jpg",
   },
+  {
+    id: 5,
+    title: "The Radio Host",
+    category: "Portrait",
+    image: "/images/fred-gumaer.jpg",
+  },
+  {
+    id: 6,
+    title: "The Bicycle Mechanic",
+    category: "Portrait",
+    image: "/images/bicycle-mechanic.jpg",
+  },
+  {
+    id: 7,
+    title: "Claire",
+    category: "Portrait",
+    image: "/images/claire.jpg",
+  },
+  {
+    id: 8,
+    title: "Dexter Silvers",
+    category: "Portrait",
+    image: "/images/dexter-silvers.jpg",
+  },
+  {
+    id: 9,
+    title: "Dr. John Cashion Bierk",
+    category: "Portrait",
+    image: "/images/john-bierk.jpg",
+  },
+  {
+    id: 10,
+    title: "The Painter",
+    category: "Portrait",
+    image: "/images/michael-bauermeister-painting.jpg",
+  },
+  {
+    id: 11,
+    title: "The Wood Carver",
+    category: "Portrait",
+    image: "/images/michael-bauermeister-bench.jpg",
+  },
+  {
+    id: 12,
+    title: "Richard Sprengeler",
+    category: "Portrait",
+    image: "/images/richard-sprengeler.jpg",
+  },
+  {
+    id: 13,
+    title: "Sam Licata at Work",
+    category: "Portrait",
+    image: "/images/sam-licata.jpg",
+  },
+  {
+    id: 14,
+    title: "The Ad Man",
+    category: "Portrait",
+    image: "/images/the-ad-man.jpg",
+  },
+  {
+    id: 15,
+    title: "The Aviator",
+    category: "Portrait",
+    image: "/images/the-aviator.jpg",
+  },
+  {
+    id: 16,
+    title: "The Urban Farmer",
+    category: "Portrait",
+    image: "/images/urban-farmer.jpg",
+  },
+  {
+    id: 17,
+    title: "Vince DiRaimondo",
+    category: "Portrait",
+    image: "/images/vince.jpg",
+  },
+  {
+    id: 18,
+    title: "The Automotive Mechanic",
+    category: "Portrait",
+    image: "/images/ray-at-bl.jpg",
+  },
+  {
+    id: 19,
+    title: "Donut Drive-In",
+    category: "Landscape",
+    image: "/images/donut-drive-in.jpg",
+  },
+  {
+    id: 20,
+    title: "Bicycle Men of the Hill",
+    category: "Portrait",
+    image: "/images/bicycle-men-of-the-hill.jpg",
+  },
+  {
+    id: 21,
+    title: "Rick Haydon",
+    category: "Portrait",
+    image: "/images/rick-haydon.jpg",
+  },
+  {
+    id: 22,
+    title: "Walter and Christie Carter",
+    category: "Portrait",
+    image: "/images/walter-and-christie.jpg",
+  },
 ];
 
 export default function WorkSection() {
@@ -73,13 +181,13 @@ export default function WorkSection() {
           </h2>
         </motion.div>
 
-        {/* Projects Grid */}
+        {/* Masonry Grid */}
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "2rem",
+            columnCount: 3,
+            columnGap: "1.5rem",
           }}
+          className="masonry-grid"
         >
           {projects.map((project, index) => (
             <motion.article
@@ -87,15 +195,18 @@ export default function WorkSection() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              style={{ cursor: "pointer" }}
+              transition={{ duration: 0.6, delay: index * 0.05 }}
+              style={{
+                cursor: "pointer",
+                breakInside: "avoid",
+                marginBottom: "1.5rem",
+              }}
             >
               <div
                 style={{
                   position: "relative",
-                  aspectRatio: "4/3",
                   overflow: "hidden",
-                  marginBottom: "1.5rem",
+                  marginBottom: "1rem",
                   background: "#1a1a1a",
                 }}
               >
@@ -104,35 +215,44 @@ export default function WorkSection() {
                   alt={project.title}
                   style={{
                     width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    objectPosition: "top center",
+                    height: "auto",
+                    display: "block",
                     transition: "transform 0.6s ease",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "scale(1.05)";
+                    e.currentTarget.style.transform = "scale(1.03)";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.transform = "scale(1)";
                   }}
                 />
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    background: "linear-gradient(to top, rgba(0,0,0,0.2) 0%, transparent 50%)",
-                  }}
-                />
               </div>
               <h3
                 className="font-display"
-                style={{ fontSize: "1.5rem", fontWeight: 400, color: "#d4b896" }}
+                style={{ fontSize: "1.25rem", fontWeight: 400, color: "#d4b896" }}
               >
                 {project.title}
               </h3>
             </motion.article>
           ))}
         </div>
+
+        {/* Responsive masonry columns */}
+        <style jsx global>{`
+          .masonry-grid {
+            column-count: 3;
+          }
+          @media (max-width: 1024px) {
+            .masonry-grid {
+              column-count: 2;
+            }
+          }
+          @media (max-width: 640px) {
+            .masonry-grid {
+              column-count: 1;
+            }
+          }
+        `}</style>
 
         {/* View All */}
         <motion.div

@@ -113,66 +113,25 @@ export default function AboutSection() {
                   color: "#ccc",
                 }}
               >
-                With over 40 years in electronic media and broadcasting, Clint Hasse has built a career
+                With over 40+ years of electronic media and broadcasting, Clint Hasse has built a career
                 at the intersection of sound, image, and storytelling.
               </p>
 
               <p style={{ color: "#888", lineHeight: 1.8, marginBottom: "1.25rem", fontSize: "0.95rem" }}>
-                Currently with 5 On Your Side KSDK/Tegna handling broadcast and digital marketing.
+                16+ years with 5 On Your Side KSDK/TEGNA handling broadcast and digital marketing.
                 At KMOX Radio, Sales Management and Voiceover Artist. Clint brings decades of experience
                 in commercial writing, producing, and voiceover work.
               </p>
 
-              <p style={{ color: "#888", lineHeight: 1.8, fontSize: "0.95rem" }}>
-                As the rhythm guitarist for Swing DeVille, St. Louis&apos;s premier gypsy jazz ensemble,
-                he plays a custom Jean-Pierre Favino guitar and lends his baritone vocals to
-                The Great American Songbook.
+              <p style={{ color: "#888", lineHeight: 1.8, marginBottom: "1.25rem", fontSize: "0.95rem" }}>
+                Clint is a lifelong guitarist, vocalist, and songwriter. You can listen to his Nashville project
+                called INSIDE NASHVILLE from 2017 to get a feel of some of his material.
               </p>
-            </div>
 
-            {/* Details grid */}
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(2, 1fr)",
-                gap: "1.5rem",
-                marginTop: "2rem",
-                paddingTop: "1.5rem",
-                borderTop: "1px solid #222",
-              }}
-            >
-              <div>
-                <p
-                  style={{
-                    fontSize: "0.65rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.15em",
-                    color: "#c41e3a",
-                    marginBottom: "0.4rem",
-                  }}
-                >
-                  Based in
-                </p>
-                <p className="font-display" style={{ fontSize: "1.1rem", color: "#d4b896" }}>
-                  St. Louis, MO
-                </p>
-              </div>
-              <div>
-                <p
-                  style={{
-                    fontSize: "0.65rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.15em",
-                    color: "#c41e3a",
-                    marginBottom: "0.4rem",
-                  }}
-                >
-                  Current Work
-                </p>
-                <p className="font-display" style={{ fontSize: "1.1rem", color: "#d4b896" }}>
-                  KSDK / Swing DeVille
-                </p>
-              </div>
+              <p style={{ color: "#888", lineHeight: 1.8, fontSize: "0.95rem" }}>
+                As a photographer, Clint specializes in portraiture, and in particular environmental portrait,
+                where the subject is captured in their own space doing what they love to do.
+              </p>
             </div>
 
             {/* Quote */}
@@ -192,7 +151,7 @@ export default function AboutSection() {
                   color: "#d4b896",
                 }}
               >
-                &ldquo;Every song tells a story. Every photograph captures a moment that will never come again.&rdquo;
+                &ldquo;Every song tells a story. Every photograph lives forever.&rdquo;
               </p>
             </blockquote>
           </motion.div>

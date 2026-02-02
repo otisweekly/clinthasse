@@ -74,7 +74,7 @@ export default function Footer() {
                 </h3>
                 <div style={{ marginBottom: "1.5rem" }}>
                   <p className="font-display" style={{ fontSize: "1.125rem", marginBottom: "0.25rem" }}>
-                    5 On Your Side KSDK/Tegna
+                    5 On Your Side KSDK/TEGNA
                   </p>
                   <p style={{ color: "#888", fontSize: "0.875rem" }}>
                     Broadcast & Digital Marketing
