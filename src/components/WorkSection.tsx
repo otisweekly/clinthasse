@@ -231,31 +231,17 @@ export default function WorkSection() {
                 marginBottom: "1.5rem",
               }}
             >
-              <div
+              <img
+                src={project.image}
+                alt={project.title}
                 style={{
-                  position: "relative",
-                  overflow: "hidden",
+                  width: "100%",
+                  height: "auto",
+                  display: "block",
                   marginBottom: "1rem",
                   background: "#1a1a1a",
                 }}
-              >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    display: "block",
-                    transition: "transform 0.6s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "scale(1.03)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "scale(1)";
-                  }}
-                />
-              </div>
+              />
               <h3
                 className="font-display"
                 style={{ fontSize: "1.25rem", fontWeight: 400, color: "#d4b896" }}
@@ -270,6 +256,12 @@ export default function WorkSection() {
         <style jsx global>{`
           .masonry-grid {
             column-count: 3;
+          }
+          .masonry-grid img {
+            width: 100%;
+            height: auto !important;
+            max-height: none !important;
+            object-fit: contain !important;
           }
           @media (max-width: 1024px) {
             .masonry-grid {
