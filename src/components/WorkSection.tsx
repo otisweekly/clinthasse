@@ -209,13 +209,14 @@ export default function WorkSection() {
           </h2>
         </motion.div>
 
-        {/* Masonry Grid */}
+        {/* Photo Grid */}
         <div
           style={{
-            columnCount: 3,
-            columnGap: "1.5rem",
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: "1.5rem",
           }}
-          className="masonry-grid"
+          className="photo-grid"
         >
           {projects.map((project, index) => (
             <motion.article
@@ -227,19 +228,17 @@ export default function WorkSection() {
               onClick={() => openLightbox(index)}
               style={{
                 cursor: "pointer",
-                breakInside: "avoid",
-                marginBottom: "1.5rem",
               }}
             >
               <img
                 src={project.image}
                 alt={project.title}
+                loading="lazy"
                 style={{
                   width: "100%",
                   height: "auto",
                   display: "block",
                   marginBottom: "1rem",
-                  background: "#1a1a1a",
                 }}
               />
               <h3
@@ -252,25 +251,22 @@ export default function WorkSection() {
           ))}
         </div>
 
-        {/* Responsive masonry columns */}
+        {/* Responsive grid */}
         <style jsx global>{`
-          .masonry-grid {
-            column-count: 3;
-          }
-          .masonry-grid img {
-            width: 100%;
+          .photo-grid img {
+            width: 100% !important;
             height: auto !important;
+            max-width: 100% !important;
             max-height: none !important;
-            object-fit: contain !important;
           }
           @media (max-width: 1024px) {
-            .masonry-grid {
-              column-count: 2;
+            .photo-grid {
+              grid-template-columns: repeat(2, 1fr) !important;
             }
           }
           @media (max-width: 640px) {
-            .masonry-grid {
-              column-count: 1;
+            .photo-grid {
+              grid-template-columns: 1fr !important;
             }
           }
         `}</style>

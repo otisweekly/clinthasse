@@ -42,3 +42,4 @@ next-env.d.ts
 
 # Guitar images (too large for git - keep locally)
 /Guitars/
+/public/images/originals/
