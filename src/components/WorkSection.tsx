@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Photo gallery - 29 unique images
 const projects = [
   // Black & White Photos
   { id: 1, title: "Grain Elevator Operator", category: "Portrait", image: "/images/david-eilert.jpg" },
