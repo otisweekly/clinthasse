@@ -48,7 +48,7 @@ export default function Footer() {
                 marginBottom: "3rem",
               }}
             >
-              Broadcaster, Musician & <span style={{ fontStyle: "italic", color: "#d4a373" }}>Visual Artist</span>
+              Broadcaster, Musician & <span style={{ color: "#d4a373" }}>Visual Artist</span>
             </h2>
 
             {/* Resume Grid */}
@@ -211,16 +211,18 @@ export default function Footer() {
             gap: "1rem",
           }}
         >
-          <a href="#" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
-            <img
-              src="/logo.svg"
-              alt="Clint Hasse"
-              style={{
-                height: "20px",
-                width: "auto",
-                filter: "invert(1)",
-              }}
-            />
+          <a
+            href="#"
+            className="font-display"
+            style={{
+              textDecoration: "none",
+              fontSize: "20px",
+              fontWeight: 700,
+              color: "#fafafa",
+              letterSpacing: "0.02em",
+            }}
+          >
+            Clint Hasse
           </a>
           <p style={{ color: "#555", fontSize: "0.75rem" }}>
             © {year} All rights reserved

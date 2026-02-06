@@ -50,16 +50,18 @@ export default function Navigation() {
           }}
           className="section-padding"
         >
-          <a href="#" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
-            <img
-              src="/logo.svg"
-              alt="Clint Hasse"
-              style={{
-                height: "22px",
-                width: "auto",
-                filter: "invert(1)",
-              }}
-            />
+          <a
+            href="#"
+            className="font-display"
+            style={{
+              textDecoration: "none",
+              fontSize: "32px",
+              fontWeight: 700,
+              color: "#fafafa",
+              letterSpacing: "0.02em",
+            }}
+          >
+            Clint Hasse
           </a>
 
           {/* Navigation links moved to hero section */}

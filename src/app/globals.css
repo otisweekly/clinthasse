@@ -1,66 +1,81 @@
-/* PP Eiko - Display Serif */
+/* PP Radio Grotesk - Brand Font */
 @font-face {
-  font-family: 'PP Eiko';
-  src: url('/fonts/PPEiko-Light.woff2') format('woff2');
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-Ultralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-UltralightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PP Eiko';
-  src: url('/fonts/PPEiko-LightItalic.woff2') format('woff2');
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-LightItalic.woff2') format('woff2');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PP Eiko';
-  src: url('/fonts/PPEiko-Regular.woff2') format('woff2');
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PP Eiko';
-  src: url('/fonts/PPEiko-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PP Eiko';
-  src: url('/fonts/PPEiko-MediumItalic.woff2') format('woff2');
-  font-weight: 500;
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
-/* PP Neue Montreal - Body Sans */
 @font-face {
-  font-family: 'PP Neue Montreal';
-  src: url('/fonts/PPNeueMontreal-Book.woff2') format('woff2');
-  font-weight: 300;
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PP Neue Montreal';
-  src: url('/fonts/PPNeueMontreal-Regular.woff2') format('woff2');
-  font-weight: 400;
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-Black.woff2') format('woff2');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PP Neue Montreal';
-  src: url('/fonts/PPNeueMontreal-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
+  font-family: 'PP Radio Grotesk';
+  src: url('/fonts/PPRadioGrotesk-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -69,8 +84,8 @@
 @tailwind utilities;
 
 :root {
-  --font-display: 'PP Eiko', Georgia, serif;
-  --font-body: 'PP Neue Montreal', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'PP Radio Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'PP Radio Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
   --bg: #0a0a0a;
   --fg: #fafafa;
   --accent: #d4b896;
@@ -94,6 +109,7 @@ body {
   background-color: var(--bg);
   color: var(--fg);
   font-family: var(--font-body);
+  font-weight: 300;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -124,10 +140,12 @@ body {
 
 .font-display {
   font-family: var(--font-display);
+  font-weight: 400;
 }
 
 .font-body {
   font-family: var(--font-body);
+  font-weight: 300;
 }
 
 .noise-overlay {

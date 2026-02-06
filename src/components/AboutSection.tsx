@@ -101,7 +101,7 @@ export default function AboutSection() {
               }}
             >
               Broadcaster, Musician &<br />
-              <span style={{ fontStyle: "italic" }}>Visual Artist</span>
+              <span style={{ color: "#d4b896" }}>Visual Artist</span>
             </h2>
 
             <div style={{ borderTop: "1px solid #222", paddingTop: "1.5rem" }}>

@@ -59,7 +59,7 @@ export default function MusicSection() {
             className="font-display"
             style={{ fontSize: "clamp(2rem, 5vw, 4rem)", fontWeight: 400, color: "#d4b896" }}
           >
-            Music & <span style={{ fontStyle: "italic" }}>Sound</span>
+            Music & Sound
           </h2>
         </motion.div>
 

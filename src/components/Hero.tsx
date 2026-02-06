@@ -92,7 +92,7 @@ export default function Hero() {
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",
-                  fontSize: "1.5rem",
+                  fontSize: "20px",
                   fontWeight: 600,
                   letterSpacing: "0.05em",
                   transition: "color 0.3s",
@@ -117,12 +117,11 @@ export default function Hero() {
             className="font-display"
             style={{
               marginTop: "15vh",
-              fontSize: "3rem",
+              fontSize: "3.5rem",
               color: "#ffffff",
               maxWidth: "550px",
               lineHeight: 1.3,
-              fontStyle: "italic",
-            }}
+                          }}
           >
             Four decades of storytelling through music, broadcast, and photography.
           </motion.p>
