@@ -160,12 +160,6 @@ export default function Footer() {
                 </h3>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
                   <a
-                    href="mailto:clinthasse@gmail.com"
-                    style={{ color: "#fafafa", textDecoration: "none", fontSize: "0.875rem" }}
-                  >
-                    clinthasse@gmail.com
-                  </a>
-                  <a
                     href="https://music.apple.com/us/artist/clint-hasse/1316269529"
                     target="_blank"
                     rel="noopener noreferrer"
