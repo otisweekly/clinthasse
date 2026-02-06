@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 
 const tracks = [
-  { title: "East Nashville Girl", duration: "4:16" },
-  { title: "Guitar Playing Goodtime Man", duration: "4:12" },
   { title: "Kombucha", duration: "4:14" },
-  { title: "All That's Missing Is You", duration: "4:08" },
-  { title: "Two Minutes and Three Shots of Bourbon", duration: "3:49" },
+  { title: "I Rarely Mow My Lawn", duration: "3:45" },
   { title: "Audrey Lives Downstairs", duration: "3:32" },
+  { title: "Two Minutes and Three Shots of Bourbon", duration: "3:49" },
+  { title: "Disappearing Cowboy Way of Life", duration: "4:22" },
+  { title: "Return to Bakersfield", duration: "4:08" },
 ];
 
 export default function MusicSection() {
@@ -101,47 +101,14 @@ export default function MusicSection() {
               }}
             >
               <img
-                src="/images/drummer-snare.jpg"
-                alt="The Drummer - Hand on Snare"
+                src="/images/inside-nashville-album.jpg"
+                alt="Inside Nashville Album Cover"
                 style={{
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  opacity: 0.8,
                 }}
               />
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  background: "rgba(0,0,0,0.2)",
-                }}
-              >
-                <div
-                  style={{
-                    width: "80px",
-                    height: "80px",
-                    borderRadius: "50%",
-                    background: "#d4a373",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    cursor: "pointer",
-                    transition: "transform 0.3s",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "scale(1.1)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "scale(1)";
-                  }}
-                >
-                  <span style={{ fontSize: "2rem", marginLeft: "4px", color: "#0a0a0a" }}>▶</span>
-                </div>
-              </div>
             </div>
 
             <p
@@ -159,8 +126,7 @@ export default function MusicSection() {
               Inside Nashville
             </h3>
             <p style={{ color: "#888", lineHeight: 1.7, marginBottom: "2rem" }}>
-              13 original country tracks capturing the spirit of Nashville—from gypsy jazz influences
-              to heartfelt storytelling. A journey through honky-tonks, love, and the disappearing cowboy way of life.
+              13 original country tracks capturing the spirit of Nashville with heartfelt storytelling. A journey through honky-tonks, love, and the disappearing cowboy way of life.
             </p>
 
             {/* Streaming Links */}
@@ -239,8 +205,11 @@ export default function MusicSection() {
 
             <div>
               {tracks.map((track, index) => (
-                <div
+                <a
                   key={track.title}
+                  href="https://music.apple.com/us/album/inside-nashville/1316269155"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -248,6 +217,7 @@ export default function MusicSection() {
                     borderBottom: "1px solid #222",
                     cursor: "pointer",
                     transition: "all 0.3s",
+                    textDecoration: "none",
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.paddingLeft = "1rem";
@@ -281,27 +251,44 @@ export default function MusicSection() {
                     </h4>
                   </div>
                   <span style={{ color: "#555", fontSize: "0.875rem" }}>{track.duration}</span>
-                </div>
+                </a>
               ))}
             </div>
 
-            <a
-              href="https://music.apple.com/us/artist/clint-hasse/1316269529"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                marginTop: "2rem",
-                color: "#d4a373",
-                textDecoration: "none",
-                fontSize: "0.875rem",
-              }}
-            >
-              Listen to full catalog on Apple Music
-              <span>→</span>
-            </a>
+            <div style={{ display: "flex", gap: "2rem", marginTop: "2rem", flexWrap: "wrap" }}>
+              <a
+                href="https://music.apple.com/us/album/inside-nashville/1316269155"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                  color: "#d4a373",
+                  textDecoration: "none",
+                  fontSize: "0.875rem",
+                }}
+              >
+                Listen to full catalog on Apple Music
+                <span>→</span>
+              </a>
+              <a
+                href="https://open.spotify.com/artist/4Bt9p5U6k46ASQGTUrXLKL"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                  color: "#1DB954",
+                  textDecoration: "none",
+                  fontSize: "0.875rem",
+                }}
+              >
+                Listen on Spotify
+                <span>→</span>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

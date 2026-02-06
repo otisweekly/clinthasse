@@ -117,20 +117,17 @@ export default function AboutSection() {
                 at the intersection of sound, image, and storytelling.
               </p>
 
-              <p style={{ color: "#888", lineHeight: 1.8, marginBottom: "1.25rem", fontSize: "0.95rem" }}>
-                16+ years with 5 On Your Side KSDK/TEGNA handling broadcast and digital marketing.
-                At KMOX Radio, Sales Management and Voiceover Artist. Clint brings decades of experience
-                in commercial writing, producing, and voiceover work.
+              <p style={{ color: "#ccc", lineHeight: 1.7, marginBottom: "1.25rem", fontSize: "1.1rem" }}>
+                Clint enjoyed 16+ years with 5 On Your Side KSDK/TEGNA conceiving, writing and producing broadcast and digital campaigns. Previously, at KMOX Radio Clint worked in sales, sales management, talk show host and voiceover artist. Clint brings decades of experience in ideation, writing, producing and voiceover work.
               </p>
 
-              <p style={{ color: "#888", lineHeight: 1.8, marginBottom: "1.25rem", fontSize: "0.95rem" }}>
-                Clint is a lifelong guitarist, vocalist, and songwriter. You can listen to his Nashville project
-                called INSIDE NASHVILLE from 2017 to get a feel of some of his material.
+              <p style={{ color: "#ccc", lineHeight: 1.7, marginBottom: "1.25rem", fontSize: "1.1rem" }}>
+                Clint is a lifelong guitarist, vocalist and songwriter. Listen to his album INSIDE NASHVILLE released in 2017.
               </p>
 
-              <p style={{ color: "#888", lineHeight: 1.8, fontSize: "0.95rem" }}>
+              <p style={{ color: "#ccc", lineHeight: 1.7, fontSize: "1.1rem" }}>
                 As a photographer, Clint specializes in portraiture, and in particular environmental portrait,
-                where the subject is captured in their own space doing what they love to do.
+                where the subject is captured in their own space doing what they love to do, offering insights into their humanity and triggering contemplation of your own pursuits.
               </p>
             </div>
 

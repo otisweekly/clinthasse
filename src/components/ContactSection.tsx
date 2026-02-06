@@ -62,7 +62,7 @@ export default function ContactSection() {
             className="font-display"
             style={{ fontSize: "clamp(2rem, 5vw, 4rem)", fontWeight: 400 }}
           >
-            Let&apos;s <span style={{ fontStyle: "italic", color: "#d4a373" }}>Connect</span>
+            Let&apos;s Start a <span style={{ fontStyle: "italic", color: "#d4a373" }}>Conversation</span>
           </h2>
         </motion.div>
 

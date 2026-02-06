@@ -62,27 +62,8 @@ export default function Navigation() {
             />
           </a>
 
-          <ul style={{ display: "flex", gap: "2.5rem", listStyle: "none" }} className="hidden md:flex">
-            {navItems.map((item) => (
-              <li key={item.label}>
-                <a
-                  href={item.href}
-                  style={{
-                    fontSize: "0.75rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    color: "#ffffff",
-                    textDecoration: "none",
-                    transition: "opacity 0.2s",
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.7")}
-                  onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          {/* Navigation links moved to hero section */}
+          <div></div>
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}

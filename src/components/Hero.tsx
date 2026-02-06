@@ -7,26 +7,50 @@ export default function Hero() {
     <section
       style={{
         minHeight: "100vh",
-        display: "grid",
-        gridTemplateColumns: "1fr",
         position: "relative",
         overflow: "hidden",
-        backgroundImage: "url(/images/clint-hasse-portrait.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "top center",
+        background: "#0a0a0a",
       }}
     >
-      {/* Content wrapper - matches nav max-width */}
+      {/* Image positioned on the right */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        style={{
+          position: "absolute",
+          right: 0,
+          top: 0,
+          bottom: 0,
+          width: "50%",
+          zIndex: 1,
+        }}
+        className="hero-image-container"
+      >
+        <img
+          src="/images/clint-illustration.jpg"
+          alt="Clint Hasse"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center top",
+          }}
+        />
+      </motion.div>
+
+      {/* Content wrapper */}
       <div
         style={{
           maxWidth: "1400px",
           margin: "0 auto",
           width: "100%",
           minHeight: "100vh",
-          display: "grid",
-          gridTemplateColumns: "1fr",
+          display: "flex",
+          alignItems: "flex-start",
+          position: "relative",
+          zIndex: 10,
         }}
-        className="md:grid-cols-2"
       >
         {/* Left: Content */}
         <div
@@ -34,44 +58,56 @@ export default function Hero() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "flex-start",
-            position: "relative",
-            zIndex: 10,
-            paddingTop: "120px",
+            alignItems: "flex-start",
+            paddingTop: "100px",
             paddingBottom: "60px",
             paddingLeft: "24px",
             paddingRight: "24px",
-            maxWidth: "700px",
+            width: "50%",
+            alignSelf: "flex-start",
           }}
         >
-          {/* Role tags */}
-          <motion.div
+          {/* Navigation Links - positioned high under logo */}
+          <motion.nav
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             style={{
               display: "flex",
-              gap: "1rem",
-              marginTop: "0",
-              flexWrap: "nowrap",
+              gap: "2rem",
+              marginBottom: "3rem",
+              flexWrap: "wrap",
             }}
           >
-            {["Photographer", "Musician", "Broadcaster"].map((role) => (
-              <span
-                key={role}
+            {[
+              { label: "Work", href: "#work" },
+              { label: "Music", href: "#music" },
+              { label: "About", href: "#about" },
+              { label: "Contact", href: "#contact" },
+            ].map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="font-display"
                 style={{
-                  padding: "0.75rem 1.5rem",
-                  border: "2px solid #ffffff",
-                  fontSize: "1rem",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.15em",
                   color: "#ffffff",
+                  textDecoration: "none",
+                  fontSize: "1.5rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.05em",
+                  transition: "color 0.3s",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = "#d4a373";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = "#ffffff";
                 }}
               >
-                {role}
-              </span>
+                {link.label}
+              </a>
             ))}
-          </motion.div>
+          </motion.nav>
 
           {/* Tagline */}
           <motion.p
@@ -80,11 +116,11 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="font-display"
             style={{
-              marginTop: "2rem",
-              fontSize: "1.25rem",
+              marginTop: "15vh",
+              fontSize: "3rem",
               color: "#ffffff",
-              maxWidth: "420px",
-              lineHeight: 1.6,
+              maxWidth: "550px",
+              lineHeight: 1.3,
               fontStyle: "italic",
             }}
           >
@@ -106,11 +142,11 @@ export default function Hero() {
             <a
               href="#work"
               style={{
-                padding: "1rem 2.5rem",
+                padding: "1.25rem 3rem",
                 background: "#fafafa",
                 color: "#0a0a0a",
                 textDecoration: "none",
-                fontSize: "1rem",
+                fontSize: "1.25rem",
                 fontWeight: 700,
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
@@ -125,177 +161,9 @@ export default function Hero() {
             >
               View Work
             </a>
-            <a
-              href="https://music.apple.com/us/artist/clint-hasse/1316269529"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                padding: "1rem 2.5rem",
-                border: "2px solid #ffffff",
-                color: "#ffffff",
-                textDecoration: "none",
-                fontSize: "1rem",
-                fontWeight: 700,
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                transition: "all 0.3s",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "#d4a373";
-                e.currentTarget.style.color = "#d4a373";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "#444";
-                e.currentTarget.style.color = "#fafafa";
-              }}
-            >
-              Listen Now
-            </a>
           </motion.div>
-
-          {/* Navigation Links */}
-          <motion.nav
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            style={{
-              display: "flex",
-              gap: "2.5rem",
-              marginTop: "3rem",
-              flexWrap: "nowrap",
-            }}
-          >
-            {[
-              { label: "Work", href: "#work" },
-              { label: "Music", href: "#music" },
-              { label: "About", href: "#about" },
-              { label: "Contact", href: "#contact" },
-            ].map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="font-display"
-                style={{
-                  color: "#ffffff",
-                  textDecoration: "none",
-                  fontSize: "1.5rem",
-                  fontWeight: 600,
-                  letterSpacing: "0.05em",
-                  transition: "opacity 0.3s",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.opacity = "0.7";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.opacity = "1";
-                }}
-              >
-                {link.label}
-              </a>
-            ))}
-          </motion.nav>
         </div>
-
-        {/* Right: Image collage */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          style={{
-            position: "relative",
-            display: "none",
-          }}
-          className="md:block"
-        >
-          {/* Main portrait image */}
-          <div
-            style={{
-              position: "absolute",
-              top: "10%",
-              left: "10%",
-              width: "70%",
-              height: "75%",
-              overflow: "hidden",
-            }}
-          >
-            <img
-              src="/images/clint-hasse-portrait.jpg"
-              alt="Clint Hasse portrait"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                objectPosition: "top center",
-              }}
-            />
-          </div>
-
-          {/* Smaller accent image */}
-          <div
-            style={{
-              position: "absolute",
-              bottom: "8%",
-              right: "5%",
-              width: "35%",
-              aspectRatio: "3/4",
-              overflow: "hidden",
-              border: "1px solid #222",
-            }}
-          >
-            <img
-              src="/images/clint-rolleiflex.jpg"
-              alt="Clint with Rolleiflex camera"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
-          </div>
-
-          {/* Red accent bar */}
-          <div
-            style={{
-              position: "absolute",
-              top: "8%",
-              left: "5%",
-              width: "3px",
-              height: "120px",
-              background: "#c41e3a",
-            }}
-          />
-
-          {/* Floating text */}
-          <div
-            style={{
-              position: "absolute",
-              bottom: "25%",
-              left: "0",
-              transform: "rotate(-90deg) translateX(-100%)",
-              transformOrigin: "left bottom",
-              fontSize: "0.65rem",
-              textTransform: "uppercase",
-              letterSpacing: "0.3em",
-              color: "#ffffff",
-            }}
-          >
-            St. Louis • 2024
-          </div>
-        </motion.div>
       </div>
-
-      {/* Mobile background image */}
-      <div
-        className="md:hidden"
-        style={{
-          position: "absolute",
-          inset: 0,
-          opacity: 0.25,
-          backgroundImage: "url(/images/clint-hasse-portrait.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-        }}
-      />
 
       {/* Scroll indicator */}
       <motion.div
@@ -311,6 +179,7 @@ export default function Hero() {
           flexDirection: "column",
           alignItems: "center",
           gap: "0.5rem",
+          zIndex: 20,
         }}
       >
         <span style={{ fontSize: "0.6rem", textTransform: "uppercase", letterSpacing: "0.2em", color: "#ffffff" }}>
@@ -322,6 +191,16 @@ export default function Hero() {
           style={{ width: "1px", height: "30px", background: "linear-gradient(to bottom, #ffffff, transparent)" }}
         />
       </motion.div>
+
+      {/* Responsive styles */}
+      <style jsx global>{`
+        @media (max-width: 768px) {
+          .hero-image-container {
+            width: 100% !important;
+            opacity: 0.3;
+          }
+        }
+      `}</style>
     </section>
   );
 }

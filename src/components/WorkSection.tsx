@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const projects = [
+  // Black & White Photos
   {
     id: 1,
     title: "Grain Elevator Operator",
@@ -12,51 +13,51 @@ const projects = [
   },
   {
     id: 2,
-    title: "The Steel Guitar Builder",
-    category: "Artisan",
-    image: "/images/steel-guitar-builder.jpg",
-  },
-  {
-    id: 3,
-    title: "Visions of Chouteau's Landing",
-    category: "Landscape",
-    image: "/images/chouteaus-landing.jpg",
-  },
-  {
-    id: 4,
-    title: "MacArthur at Twilight",
-    category: "Photography",
-    image: "/images/macarthur-twilight.jpg",
-  },
-  {
-    id: 5,
-    title: "The Radio Host",
-    category: "Portrait",
-    image: "/images/fred-gumaer.jpg",
-  },
-  {
-    id: 6,
     title: "The Bicycle Mechanic",
     category: "Portrait",
     image: "/images/bicycle-mechanic.jpg",
   },
   {
-    id: 7,
-    title: "Claire",
+    id: 3,
+    title: "The Radio Host",
     category: "Portrait",
-    image: "/images/claire.jpg",
+    image: "/images/fred-gumaer.jpg",
   },
   {
-    id: 8,
+    id: 4,
+    title: "The Steel Guitar Builder",
+    category: "Artisan",
+    image: "/images/steel-guitar-builder.jpg",
+  },
+  {
+    id: 5,
     title: "Dexter Silvers",
     category: "Portrait",
     image: "/images/dexter-silvers.jpg",
   },
   {
-    id: 9,
-    title: "Dr. John Cashion Bierk",
+    id: 6,
+    title: "Claire - The Original Owner",
     category: "Portrait",
-    image: "/images/john-bierk.jpg",
+    image: "/images/claire.jpg",
+  },
+  {
+    id: 7,
+    title: "The Aviator",
+    category: "Portrait",
+    image: "/images/the-aviator.jpg",
+  },
+  {
+    id: 8,
+    title: "The Wood Carver",
+    category: "Portrait",
+    image: "/images/michael-bauermeister-bench.jpg",
+  },
+  {
+    id: 9,
+    title: "The Urban Farmer",
+    category: "Portrait",
+    image: "/images/urban-farmer.jpg",
   },
   {
     id: 10,
@@ -66,75 +67,88 @@ const projects = [
   },
   {
     id: 11,
-    title: "The Wood Carver",
-    category: "Portrait",
-    image: "/images/michael-bauermeister-bench.jpg",
-  },
-  {
-    id: 12,
     title: "Richard Sprengeler",
     category: "Portrait",
     image: "/images/richard-sprengeler.jpg",
   },
   {
-    id: 13,
-    title: "Sam Licata at Work",
+    id: 12,
+    title: "The Drummer",
     category: "Portrait",
-    image: "/images/sam-licata.jpg",
+    image: "/images/the-drummer.jpg",
   },
   {
-    id: 14,
+    id: 13,
     title: "The Ad Man",
     category: "Portrait",
     image: "/images/the-ad-man.jpg",
   },
   {
-    id: 15,
-    title: "The Aviator",
-    category: "Portrait",
-    image: "/images/the-aviator.jpg",
-  },
-  {
-    id: 16,
-    title: "The Urban Farmer",
-    category: "Portrait",
-    image: "/images/urban-farmer.jpg",
-  },
-  {
-    id: 17,
-    title: "Vince DiRaimondo",
-    category: "Portrait",
-    image: "/images/vince.jpg",
-  },
-  {
-    id: 18,
-    title: "The Automotive Mechanic",
-    category: "Portrait",
-    image: "/images/ray-at-bl.jpg",
-  },
-  {
-    id: 19,
-    title: "Donut Drive-In",
-    category: "Landscape",
-    image: "/images/donut-drive-in.jpg",
-  },
-  {
-    id: 20,
-    title: "Bicycle Men of the Hill",
-    category: "Portrait",
-    image: "/images/bicycle-men-of-the-hill.jpg",
-  },
-  {
-    id: 21,
+    id: 14,
     title: "Rick Haydon",
     category: "Portrait",
     image: "/images/rick-haydon.jpg",
   },
   {
-    id: 22,
+    id: 15,
+    title: "The Sculptor",
+    category: "Portrait",
+    image: "/images/michael-bauermeister-sculptures.jpg",
+  },
+  {
+    id: 16,
+    title: "Dr. John Cashion Bierk",
+    category: "Portrait",
+    image: "/images/john-bierk.jpg",
+  },
+  // Color Photos
+  {
+    id: 13,
+    title: "Donut Drive-In",
+    category: "Landscape",
+    image: "/images/donut-drive-in.jpg",
+  },
+  {
+    id: 14,
+    title: "MacArthur at Twilight",
+    category: "Photography",
+    image: "/images/macarthur-twilight.jpg",
+  },
+  {
+    id: 16,
+    title: "Sam Licata at Work",
+    category: "Portrait",
+    image: "/images/sam-licata.jpg",
+  },
+  {
+    id: 17,
+    title: "Bicycle Men of the Hill",
+    category: "Portrait",
+    image: "/images/bicycle-men-of-the-hill.jpg",
+  },
+  {
+    id: 19,
+    title: "The Automotive Mechanic",
+    category: "Portrait",
+    image: "/images/ray-at-bl.jpg",
+  },
+  {
+    id: 20,
     title: "Walter and Christie Carter",
     category: "Portrait",
     image: "/images/walter-and-christie.jpg",
+  },
+  {
+    id: 21,
+    title: "Vince DiRaimondo",
+    category: "Portrait",
+    image: "/images/vince.jpg",
+  },
+  {
+    id: 22,
+    title: "Visions of Chouteau's Landing",
+    category: "Landscape",
+    image: "/images/chouteaus-landing.jpg",
   },
 ];
 
@@ -271,39 +285,6 @@ export default function WorkSection() {
           }
         `}</style>
 
-        {/* View All */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          style={{ marginTop: "4rem", textAlign: "center" }}
-        >
-          <a
-            href="#"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.75rem",
-              padding: "1rem 2rem",
-              border: "1px solid #333",
-              color: "#fafafa",
-              textDecoration: "none",
-              fontSize: "0.875rem",
-              transition: "all 0.3s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "#d4a373";
-              e.currentTarget.style.color = "#d4a373";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "#333";
-              e.currentTarget.style.color = "#fafafa";
-            }}
-          >
-            View All Projects
-            <span>→</span>
-          </a>
-        </motion.div>
       </div>
 
       {/* Lightbox */}
