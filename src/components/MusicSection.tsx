@@ -2,15 +2,6 @@
 
 import { motion } from "framer-motion";
 
-const tracks = [
-  { title: "Kombucha", duration: "4:14" },
-  { title: "I Rarely Mow My Lawn", duration: "3:45" },
-  { title: "Audrey Lives Downstairs", duration: "3:32" },
-  { title: "Two Minutes and Three Shots of Bourbon", duration: "3:49" },
-  { title: "Disappearing Cowboy Way of Life", duration: "4:22" },
-  { title: "Return to Bakersfield", duration: "4:08" },
-];
-
 export default function MusicSection() {
   return (
     <section
@@ -126,7 +117,7 @@ export default function MusicSection() {
               Inside Nashville
             </h3>
             <p style={{ color: "#888", lineHeight: 1.7, marginBottom: "2rem" }}>
-              13 original country tracks capturing the spirit of Nashville with heartfelt storytelling. A journey through honky-tonks, love, and the disappearing cowboy way of life.
+              13 original songs capturing the spirit of the Nashville experience with heartfelt storytelling. A journey through the honky-tonks, love and the disappearing cowboy way of life.
             </p>
 
             {/* Streaming Links */}
@@ -184,7 +175,7 @@ export default function MusicSection() {
             </div>
           </motion.div>
 
-          {/* Track List */}
+          {/* Spotify Player */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -200,60 +191,19 @@ export default function MusicSection() {
                 marginBottom: "2rem",
               }}
             >
-              Selected Tracks
+              Preview Tracks
             </p>
 
-            <div>
-              {tracks.map((track, index) => (
-                <a
-                  key={track.title}
-                  href="https://music.apple.com/us/album/inside-nashville/1316269155"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    padding: "1.5rem 0",
-                    borderBottom: "1px solid #222",
-                    cursor: "pointer",
-                    transition: "all 0.3s",
-                    textDecoration: "none",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.paddingLeft = "1rem";
-                    e.currentTarget.style.background = "rgba(255,255,255,0.02)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.paddingLeft = "0";
-                    e.currentTarget.style.background = "transparent";
-                  }}
-                >
-                  <span style={{ color: "#555", marginRight: "2rem", fontSize: "0.875rem" }}>
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      border: "1px solid #333",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      marginRight: "1.5rem",
-                    }}
-                  >
-                    <span style={{ fontSize: "0.75rem", marginLeft: "2px" }}>▶</span>
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.25rem", color: "#d4b896" }}>
-                      {track.title}
-                    </h4>
-                  </div>
-                  <span style={{ color: "#555", fontSize: "0.875rem" }}>{track.duration}</span>
-                </a>
-              ))}
-            </div>
+            <iframe
+              style={{ borderRadius: "12px" }}
+              src="https://open.spotify.com/embed/album/2pTAaTMlrI3Fv5Vc5P05Pj?utm_source=generator&theme=0"
+              width="100%"
+              height="452"
+              frameBorder="0"
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            />
 
             <div style={{ display: "flex", gap: "2rem", marginTop: "2rem", flexWrap: "wrap" }}>
               <a
@@ -269,23 +219,7 @@ export default function MusicSection() {
                   fontSize: "0.875rem",
                 }}
               >
-                Listen to full catalog on Apple Music
-                <span>→</span>
-              </a>
-              <a
-                href="https://open.spotify.com/artist/4Bt9p5U6k46ASQGTUrXLKL"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "0.5rem",
-                  color: "#1DB954",
-                  textDecoration: "none",
-                  fontSize: "0.875rem",
-                }}
-              >
-                Listen on Spotify
+                Listen on Apple Music
                 <span>→</span>
               </a>
             </div>
