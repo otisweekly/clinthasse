@@ -36,6 +36,7 @@ const projects = [
   { id: 27, title: "Vince DiRaimondo", category: "Portrait", image: "/images/vince.jpg" },
   { id: 28, title: "Visions of Chouteau's Landing", category: "Landscape", image: "/images/chouteaus-landing.jpg" },
   { id: 29, title: "David and Larry", category: "Portrait", image: "/images/david-and-larry.jpg" },
+  { id: 30, title: "Michael Santangelo", category: "Portrait", image: "/images/michael-santangelo.jpg" },
 ];
 
 export default function WorkSection() {
