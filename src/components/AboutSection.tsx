@@ -118,7 +118,7 @@ export default function AboutSection() {
               </p>
 
               <p style={{ color: "#ccc", lineHeight: 1.7, marginBottom: "1.25rem", fontSize: "1.1rem" }}>
-                Clint enjoyed 16+ years with 5 On Your Side KSDK/TEGNA conceiving, writing and producing broadcast and digital campaigns. Previously, at KMOX Radio Clint worked in sales, sales management, talk show host and voiceover artist. Clint brings decades of experience in ideation, writing, producing and voiceover work.
+                Clint enjoyed 16+ years with 5 On Your Side KSDK/TEGNA conceiving, writing and producing broadcast and digital campaigns. Previously, at KMOX Radio Clint worked in sales, sales management, talk show host and voiceover artist. Clint brings decades of experience in ideation, writing, producing, musical image/jingle creation and voiceover work.
               </p>
 
               <p style={{ color: "#ccc", lineHeight: 1.7, marginBottom: "1.25rem", fontSize: "1.1rem" }}>
@@ -127,7 +127,7 @@ export default function AboutSection() {
 
               <p style={{ color: "#ccc", lineHeight: 1.7, fontSize: "1.1rem" }}>
                 As a photographer, Clint specializes in portraiture, and in particular environmental portrait,
-                where the subject is captured in their own space doing what they love to do, offering insights into their humanity and triggering contemplation of your own pursuits.
+                where the subject is captured in their own private space doing what they love to do, offering insights into their humanity and triggering contemplation of your own pursuits.
               </p>
             </div>
 
