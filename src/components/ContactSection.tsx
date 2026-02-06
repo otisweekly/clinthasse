@@ -12,12 +12,15 @@ export default function ContactSection() {
     setStatus("sending");
 
     try {
-      const response = await fetch("https://formspree.io/f/xpwzgkvq", {
+      const response = await fetch("https://formspree.io/f/mkovnwyk", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          ...form,
+          _subject: "Query from my site",
+        }),
       });
 
       if (response.ok) {
