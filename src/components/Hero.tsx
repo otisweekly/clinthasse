@@ -67,11 +67,12 @@ export default function Hero() {
             alignSelf: "flex-start",
           }}
         >
-          {/* Navigation Links - positioned high under logo */}
+          {/* Navigation Links - positioned high under logo (hidden on mobile) */}
           <motion.nav
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
+            className="hero-nav"
             style={{
               display: "flex",
               gap: "2rem",
@@ -197,6 +198,9 @@ export default function Hero() {
           .hero-image-container {
             width: 100% !important;
             opacity: 0.3;
+          }
+          .hero-nav {
+            display: none !important;
           }
         }
       `}</style>
