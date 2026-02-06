@@ -269,7 +269,7 @@ export default function WorkSection() {
               />
               <h3
                 className="font-display"
-                style={{ fontSize: "1.25rem", fontWeight: 400, color: "#d4b896" }}
+                style={{ fontSize: "18px", fontWeight: 400, color: "#d4b896" }}
               >
                 {project.title}
               </h3>
