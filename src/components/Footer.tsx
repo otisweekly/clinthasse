@@ -85,7 +85,7 @@ export default function Footer() {
                     KMOX Radio
                   </p>
                   <p style={{ color: "#888", fontSize: "0.875rem" }}>
-                    Sales Management and Voiceover Artist
+                    Sales Management, Voiceover Artist and Talk Show Host
                   </p>
                 </div>
                 <div>
@@ -111,28 +111,12 @@ export default function Footer() {
                 >
                   Music
                 </h3>
-                <div style={{ marginBottom: "1.5rem" }}>
+                <div>
                   <p className="font-display" style={{ fontSize: "1.125rem", marginBottom: "0.25rem" }}>
                     Swing DeVille
                   </p>
                   <p style={{ color: "#888", fontSize: "0.875rem" }}>
                     St. Louis Gypsy Jazz Ensemble
-                  </p>
-                </div>
-                <div style={{ marginBottom: "1.5rem" }}>
-                  <p className="font-display" style={{ fontSize: "1.125rem", marginBottom: "0.25rem" }}>
-                    Guitare Rhythmique
-                  </p>
-                  <p style={{ color: "#888", fontSize: "0.875rem" }}>
-                    Custom Jean-Pierre Favino Guitar
-                  </p>
-                </div>
-                <div>
-                  <p className="font-display" style={{ fontSize: "1.125rem", marginBottom: "0.25rem" }}>
-                    Baritone Vocalist
-                  </p>
-                  <p style={{ color: "#888", fontSize: "0.875rem" }}>
-                    The Great American Songbook
                   </p>
                 </div>
               </div>
@@ -155,6 +139,7 @@ export default function Footer() {
                   <li>Digital & OTT Marketing</li>
                   <li>Voiceover & Narration</li>
                   <li>Commercial Writing & Producing</li>
+                  <li>Musical Image/Jingle Creation</li>
                   <li>Photography</li>
                   <li>Live Performance</li>
                 </ul>
@@ -203,14 +188,6 @@ export default function Footer() {
                     style={{ color: "#888", textDecoration: "none", fontSize: "0.875rem" }}
                   >
                     LinkedIn
-                  </a>
-                  <a
-                    href="https://www.swingdeville.com/clint-hasse"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#888", textDecoration: "none", fontSize: "0.875rem" }}
-                  >
-                    Swing DeVille
                   </a>
                 </div>
               </div>
