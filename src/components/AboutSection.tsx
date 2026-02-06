@@ -50,17 +50,6 @@ export default function AboutSection() {
                   objectPosition: "top center",
                 }}
               />
-              {/* Red accent corner */}
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 0,
-                  left: 0,
-                  width: "4px",
-                  height: "80px",
-                  background: "#c41e3a",
-                }}
-              />
             </div>
                       </motion.div>
 
