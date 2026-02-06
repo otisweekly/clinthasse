@@ -15,13 +15,14 @@ export default function AboutSection() {
         className="section-padding"
         style={{ maxWidth: "1400px", margin: "0 auto" }}
       >
-        {/* Side by side layout */}
+        {/* Stacked layout - image on top */}
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gap: "4rem",
-            alignItems: "start",
+            display: "flex",
+            flexDirection: "column",
+            gap: "3rem",
+            maxWidth: "800px",
+            margin: "0 auto",
           }}
         >
           {/* Left: Image + caption */}
@@ -61,13 +62,11 @@ export default function AboutSection() {
                 }}
               />
             </div>
-            <p style={{ marginTop: "1rem", fontSize: "0.7rem", color: "#555", letterSpacing: "0.05em" }}>
-              October 2025
-            </p>
-          </motion.div>
+                      </motion.div>
 
           {/* Right: Bio content */}
           <motion.div
+            className="about-bio"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -155,11 +154,17 @@ export default function AboutSection() {
         </div>
       </div>
 
-      {/* Mobile: Stack vertically */}
-      <style jsx>{`
+      {/* Mobile adjustments */}
+      <style jsx global>{`
         @media (max-width: 768px) {
-          div[style*="grid-template-columns: repeat(2, 1fr)"] {
-            grid-template-columns: 1fr !important;
+          #about .about-bio p,
+          #about .about-bio div p {
+            text-align: left !important;
+            max-width: 100% !important;
+            width: 100% !important;
+          }
+          #about h2 {
+            text-align: left !important;
           }
         }
       `}</style>

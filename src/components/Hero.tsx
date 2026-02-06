@@ -54,6 +54,7 @@ export default function Hero() {
       >
         {/* Left: Content */}
         <div
+          className="hero-content"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -115,14 +116,14 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="font-display"
+            className="font-display hero-tagline"
             style={{
               marginTop: "15vh",
               fontSize: "3.5rem",
               color: "#ffffff",
               maxWidth: "550px",
               lineHeight: 1.3,
-                          }}
+            }}
           >
             Four decades of storytelling through music, broadcast, and photography.
           </motion.p>
@@ -141,6 +142,7 @@ export default function Hero() {
           >
             <a
               href="#work"
+              className="hero-cta"
               style={{
                 padding: "1.25rem 3rem",
                 background: "#fafafa",
@@ -201,6 +203,24 @@ export default function Hero() {
           }
           .hero-nav {
             display: none !important;
+          }
+          .hero-content {
+            width: 100% !important;
+            min-height: 100vh !important;
+            justify-content: flex-end !important;
+            padding-top: 0 !important;
+            padding-bottom: 120px !important;
+          }
+          .hero-tagline {
+            font-size: 2.25rem !important;
+            line-height: 1.2 !important;
+            max-width: 100% !important;
+            margin-top: 0 !important;
+          }
+          .hero-cta {
+            width: 100% !important;
+            text-align: center !important;
+            display: block !important;
           }
         }
       `}</style>

@@ -101,6 +101,18 @@ const projects = [
     category: "Portrait",
     image: "/images/john-bierk.jpg",
   },
+  {
+    id: 17,
+    title: "Sione and Janet",
+    category: "Portrait",
+    image: "/images/image002.jpg",
+  },
+  {
+    id: 18,
+    title: "Grease 3",
+    category: "Portrait",
+    image: "/images/avedonesque-group.jpg",
+  },
   // Color Photos
   {
     id: 13,
@@ -280,7 +292,8 @@ export default function WorkSection() {
           }
           @media (max-width: 640px) {
             .photo-grid {
-              grid-template-columns: 1fr !important;
+              grid-template-columns: repeat(2, 1fr) !important;
+              gap: 0.75rem !important;
             }
           }
         `}</style>

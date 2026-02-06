@@ -87,6 +87,19 @@ export default function ContactSection() {
           >
             Let&apos;s Start a <span style={{ color: "#d4a373" }}>Conversation</span>
           </h2>
+          <img
+            src="/images/clint-rolleiflex.jpg"
+            alt="Clint Hasse with Rolleiflex camera"
+            style={{
+              width: "100%",
+              height: "auto",
+              maxWidth: "200px",
+              marginTop: "2rem",
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          />
         </motion.div>
 
         {/* Content Grid */}
@@ -227,6 +240,7 @@ export default function ContactSection() {
             </form>
           </motion.div>
         </div>
+
       </div>
     </section>
   );
