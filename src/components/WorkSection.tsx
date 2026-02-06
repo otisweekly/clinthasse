@@ -162,6 +162,12 @@ const projects = [
     category: "Landscape",
     image: "/images/chouteaus-landing.jpg",
   },
+  {
+    id: 23,
+    title: "David and Larry",
+    category: "Portrait",
+    image: "/images/david-and-larry.jpg",
+  },
 ];
 
 export default function WorkSection() {
