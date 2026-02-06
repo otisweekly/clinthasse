@@ -5,10 +5,30 @@ import { useState } from "react";
 
 export default function ContactSection() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", form);
+    setStatus("sending");
+
+    try {
+      const response = await fetch("https://formspree.io/f/xpwzgkvq", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (response.ok) {
+        setStatus("sent");
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   const inputStyle = {
@@ -87,50 +107,6 @@ export default function ContactSection() {
               I&apos;d love to hear from you.
             </p>
 
-            <div style={{ marginBottom: "2rem" }}>
-              <p
-                style={{
-                  fontSize: "0.75rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: "#c41e3a",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                Email
-              </p>
-              <a
-                href="mailto:clinthasse@gmail.com"
-                className="font-display"
-                style={{
-                  fontSize: "1.5rem",
-                  color: "#fafafa",
-                  textDecoration: "none",
-                  transition: "color 0.3s",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#d4a373")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#fafafa")}
-              >
-                clinthasse@gmail.com
-              </a>
-            </div>
-
-            <div style={{ marginBottom: "2rem" }}>
-              <p
-                style={{
-                  fontSize: "0.75rem",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.1em",
-                  color: "#c41e3a",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                Location
-              </p>
-              <p className="font-display" style={{ fontSize: "1.5rem" }}>
-                St. Louis, Missouri, USA
-              </p>
-            </div>
 
           </motion.div>
 
@@ -219,25 +195,32 @@ export default function ContactSection() {
 
               <button
                 type="submit"
+                disabled={status === "sending"}
                 style={{
                   padding: "1rem 3rem",
-                  background: "#fafafa",
+                  background: status === "sent" ? "#22c55e" : "#fafafa",
                   color: "#0a0a0a",
                   border: "none",
                   fontSize: "0.875rem",
                   fontWeight: 500,
-                  cursor: "pointer",
+                  cursor: status === "sending" ? "wait" : "pointer",
                   transition: "all 0.3s",
+                  opacity: status === "sending" ? 0.7 : 1,
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "#d4a373";
+                  if (status !== "sent") e.currentTarget.style.background = "#d4a373";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "#fafafa";
+                  if (status !== "sent") e.currentTarget.style.background = "#fafafa";
                 }}
               >
-                Send Message →
+                {status === "sending" ? "Sending..." : status === "sent" ? "Message Sent!" : "Send Message →"}
               </button>
+              {status === "error" && (
+                <p style={{ color: "#ef4444", marginTop: "1rem", fontSize: "0.875rem" }}>
+                  Something went wrong. Please try again.
+                </p>
+              )}
             </form>
           </motion.div>
         </div>
