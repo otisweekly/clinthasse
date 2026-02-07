@@ -251,6 +251,26 @@ export default function MusicSection() {
                 Your browser does not support the audio element.
               </audio>
             </div>
+
+            {/* Won't You Come On Over Ruby */}
+            <div style={{ marginTop: "2rem" }}>
+              <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem", color: "#d4b896" }}>
+                Won't You Come On Over Ruby
+              </h4>
+              <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
+                Written and performed by Clint and The Basement Boys
+              </p>
+              <audio
+                controls
+                style={{
+                  width: "100%",
+                  height: "40px",
+                }}
+              >
+                <source src="/audio/wont-you-come-on-over-ruby.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
           </motion.div>
         </div>
       </div>
