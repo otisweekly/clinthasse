@@ -138,7 +138,7 @@ export default function AboutSection() {
               {/* Musical Image Example */}
               <div style={{ marginTop: "2rem", marginBottom: "2rem", maxWidth: "400px" }}>
                 <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem", fontWeight: "bold" }}>
-                  Musical Image Example: Conceived, written and performed by Clint and The Sappingtones
+                  Musical Image Example: Conceived, written and performed by Clint and The SappingTones
                 </p>
                 <audio
                   controls
