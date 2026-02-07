@@ -132,6 +132,23 @@ export default function AboutSection() {
                 </div>
               </div>
 
+              {/* Musical Image Example */}
+              <div style={{ marginTop: "2rem", marginBottom: "2rem", maxWidth: "400px" }}>
+                <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem" }}>
+                  Musical Image Example: Conceived, written and performed by Clint and The Sappingtones
+                </p>
+                <audio
+                  controls
+                  style={{
+                    width: "100%",
+                    height: "40px",
+                  }}
+                >
+                  <source src="/audio/skys-the-limit.wav" type="audio/wav" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
               <p style={{ color: "#ccc", lineHeight: 1.7, marginBottom: "1.25rem", fontSize: "1.1rem" }}>
                 Clint is a lifelong guitarist, vocalist and songwriter. Listen to his album INSIDE NASHVILLE released in 2017 on{" "}
                 <a
