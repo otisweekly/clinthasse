@@ -143,7 +143,7 @@ export default function AboutSection() {
                   color: "#d4b896",
                 }}
               >
-                &ldquo;Every song tells a story. Every photograph lives forever.&rdquo;
+                &ldquo;Every song and photograph tells a story. Every song and photograph lives forever.&rdquo;
               </p>
             </blockquote>
           </motion.div>
