@@ -237,7 +237,7 @@ export default function MusicSection() {
               <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem", color: "#d4b896" }}>
                 In the Rain
               </h4>
-              <p style={{ color: "#888", fontSize: "0.875rem", marginBottom: "1rem" }}>
+              <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
                 Written and performed by Clint and The Sappingtones
               </p>
               <audio
