@@ -48,7 +48,7 @@ export default function Footer() {
                 marginBottom: "3rem",
               }}
             >
-              Broadcaster, Musician & <span style={{ color: "#d4a373" }}>Visual Artist</span>
+              Broadcaster, Musician & <span style={{ color: "#d4a373" }}>Photographer</span>
             </h2>
 
             {/* Resume Grid */}
