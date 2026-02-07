@@ -183,6 +183,14 @@ export default function Footer() {
                   >
                     LinkedIn
                   </a>
+                  <a
+                    href="https://www.youtube.com/playlist?list=OLAK5uy_kx4AheYEk94rDVzDhcmrpOUKebBD9DcvE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#888", textDecoration: "none", fontSize: "0.875rem" }}
+                  >
+                    YouTube
+                  </a>
                 </div>
               </div>
             </div>
