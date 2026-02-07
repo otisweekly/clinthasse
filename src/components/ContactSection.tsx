@@ -119,7 +119,7 @@ export default function ContactSection() {
             transition={{ duration: 0.8 }}
           >
             <p style={{ color: "#888", lineHeight: 1.8, marginBottom: "3rem", maxWidth: "400px", fontSize: "1.1rem" }}>
-              Interested in collaborating, commissioning work, or just want to say hello?
+              Interested in collaborating, commissioning work, booking a musical performance, or just want to say hello?
               I&apos;d love to hear from you.
             </p>
 
