@@ -148,7 +148,7 @@ export default function AboutSection() {
                 src="/images/inside-nashville-cover.jpg"
                 alt="Inside Nashville Album Cover"
                 style={{
-                  width: "200px",
+                  width: "150px",
                   height: "auto",
                   marginBottom: "1.5rem",
                 }}
