@@ -199,7 +199,17 @@ export default function Hero() {
         @media (max-width: 768px) {
           .hero-image-container {
             width: 100% !important;
-            opacity: 0.1;
+            position: relative !important;
+          }
+          .hero-image-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            pointer-events: none;
           }
           .hero-nav {
             display: none !important;
