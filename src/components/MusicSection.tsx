@@ -235,10 +235,10 @@ export default function MusicSection() {
               </a>
             </div>
 
-            {/* Other Original Music */}
+            {/* More Original Music */}
             <div style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid #222" }}>
               <p style={{ color: "#c41e3a", fontSize: "1.25rem", marginBottom: "1.5rem" }}>
-                Other Original Music
+                More Original Music
               </p>
               <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem", color: "#d4b896" }}>
                 In the Rain
