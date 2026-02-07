@@ -223,27 +223,29 @@ export default function Footer() {
             gap: "1rem",
           }}
         >
-          <a
-            href="#"
-            className="font-display"
-            style={{
-              textDecoration: "none",
-              fontSize: "20px",
-              fontWeight: 700,
-              color: "#fafafa",
-              letterSpacing: "0.02em",
-            }}
-          >
-            Clint Hasse
-          </a>
-          <img
-            src="/images/clint-rolleiflex-bw.jpg"
-            alt="Clint Hasse with Rolleiflex"
-            style={{
-              width: "80px",
-              height: "auto",
-            }}
-          />
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+            <a
+              href="#"
+              className="font-display"
+              style={{
+                textDecoration: "none",
+                fontSize: "20px",
+                fontWeight: 700,
+                color: "#fafafa",
+                letterSpacing: "0.02em",
+              }}
+            >
+              Clint Hasse
+            </a>
+            <img
+              src="/images/clint-rolleiflex-bw.jpg"
+              alt="Clint Hasse with Rolleiflex"
+              style={{
+                width: "80px",
+                height: "auto",
+              }}
+            />
+          </div>
           <p style={{ color: "#555", fontSize: "0.75rem" }}>
             © {year} All rights reserved
           </p>
