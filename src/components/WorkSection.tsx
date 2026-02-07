@@ -23,7 +23,7 @@ const projects = [
   { id: 15, title: "The Ad Man", category: "Portrait", image: "/images/the-ad-man.jpg" },
   { id: 16, title: "Rick Haydon", category: "Portrait", image: "/images/rick-haydon.jpg" },
   { id: 17, title: "The Sculptor", category: "Portrait", image: "/images/michael-bauermeister-sculptures.jpg" },
-  { id: 18, title: "Dr. John Cashion Bierk", category: "Portrait", image: "/images/john-bierk.jpg" },
+  { id: 18, title: "Dr. John Cashion Bierk - The Writer", category: "Portrait", image: "/images/john-bierk.jpg" },
   { id: 19, title: "Sione and Janet", category: "Portrait", image: "/images/image002.jpg" },
   { id: 20, title: "Grease 3", category: "Portrait", image: "/images/avedonesque-group.jpg" },
   // Color Photos
