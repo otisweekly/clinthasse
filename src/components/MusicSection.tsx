@@ -117,7 +117,15 @@ export default function MusicSection() {
               INSIDE NASHVILLE
             </h3>
             <p style={{ color: "#888", fontSize: "0.875rem", marginBottom: "1rem" }}>
-              Produced by Justin Branum
+              Produced by{" "}
+              <a
+                href="https://www.justinbranum.com/justins-bio"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#d4a373", textDecoration: "none" }}
+              >
+                Justin Branum
+              </a>
             </p>
             <p style={{ color: "#888", lineHeight: 1.7, marginBottom: "2rem" }}>
               13 original songs capturing the spirit of the Nashville experience with heartfelt storytelling. A journey through the honky-tonks, love and the disappearing old Nashville Mid-South charm. Available on all streaming platforms including{" "}
