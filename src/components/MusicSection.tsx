@@ -274,6 +274,26 @@ export default function MusicSection() {
                 Your browser does not support the audio element.
               </audio>
             </div>
+
+            {/* The Arabesque */}
+            <div style={{ marginTop: "2rem" }}>
+              <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem", color: "#d4b896" }}>
+                The Arabesque
+              </h4>
+              <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
+                Written and performed by Clint and Swing DeVille
+              </p>
+              <audio
+                controls
+                style={{
+                  width: "100%",
+                  height: "40px",
+                }}
+              >
+                <source src="/audio/the-arabesque.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
           </motion.div>
         </div>
       </div>
