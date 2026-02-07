@@ -113,9 +113,12 @@ export default function MusicSection() {
             >
               Album • 2017
             </p>
-            <h3 className="font-display" style={{ fontSize: "2rem", marginBottom: "1rem", color: "#d4b896" }}>
-              Inside Nashville
+            <h3 className="font-display" style={{ fontSize: "2rem", marginBottom: "0.25rem", color: "#d4b896" }}>
+              INSIDE NASHVILLE
             </h3>
+            <p style={{ color: "#888", fontSize: "0.875rem", marginBottom: "1rem" }}>
+              Produced by Justin Branum
+            </p>
             <p style={{ color: "#888", lineHeight: 1.7, marginBottom: "2rem" }}>
               13 original songs capturing the spirit of the Nashville experience with heartfelt storytelling. A journey through the honky-tonks, love and the disappearing cowboy way of life. Available on all streaming platforms including{" "}
               <a
