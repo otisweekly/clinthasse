@@ -120,7 +120,7 @@ export default function MusicSection() {
               Produced by Justin Branum
             </p>
             <p style={{ color: "#888", lineHeight: 1.7, marginBottom: "2rem" }}>
-              13 original songs capturing the spirit of the Nashville experience with heartfelt storytelling. A journey through the honky-tonks, love and the disappearing cowboy way of life. Available on all streaming platforms including{" "}
+              13 original songs capturing the spirit of the Nashville experience with heartfelt storytelling. A journey through the honky-tonks, love and the disappearing old Nashville Mid-South charm. Available on all streaming platforms including{" "}
               <a
                 href="https://www.youtube.com/playlist?list=OLAK5uy_kx4AheYEk94rDVzDhcmrpOUKebBD9DcvE"
                 target="_blank"
