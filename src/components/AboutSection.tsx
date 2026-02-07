@@ -109,6 +109,23 @@ export default function AboutSection() {
                 Clint enjoyed 16+ years with 5 On Your Side KSDK/TEGNA conceiving, writing and producing broadcast and digital campaigns. Previously, at KMOX Radio Clint worked in sales, sales management, talk show host and voiceover artist. Clint brings decades of experience in ideation, writing, producing, musical image/jingle creation and voiceover work.
               </p>
 
+              {/* Marty Stuart Interview */}
+              <div style={{ marginTop: "2rem", marginBottom: "2rem", maxWidth: "400px" }}>
+                <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem", fontWeight: "bold" }}>
+                  Interview with Country Music performer, impresario, ambassador and historian Marty Stuart on KMOX
+                </p>
+                <audio
+                  controls
+                  style={{
+                    width: "100%",
+                    height: "40px",
+                  }}
+                >
+                  <source src="/audio/marty-stuart-interview.mp3" type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+
               {/* Musical Image Example */}
               <div style={{ marginTop: "2rem", marginBottom: "2rem", maxWidth: "400px" }}>
                 <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem", fontWeight: "bold" }}>
