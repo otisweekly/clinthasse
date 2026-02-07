@@ -110,7 +110,15 @@ export default function AboutSection() {
               </p>
 
               <p style={{ color: "#ccc", lineHeight: 1.7, marginBottom: "1.25rem", fontSize: "1.1rem" }}>
-                Clint is a lifelong guitarist, vocalist and songwriter. Listen to his album INSIDE NASHVILLE released in 2017.
+                Clint is a lifelong guitarist, vocalist and songwriter. Listen to his album INSIDE NASHVILLE released in 2017 on{" "}
+                <a
+                  href="https://www.youtube.com/playlist?list=OLAK5uy_kx4AheYEk94rDVzDhcmrpOUKebBD9DcvE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#d4a373", textDecoration: "none" }}
+                >
+                  YouTube
+                </a>.
               </p>
 
               <p style={{ color: "#ccc", lineHeight: 1.7, fontSize: "1.1rem" }}>
