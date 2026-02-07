@@ -267,7 +267,7 @@ export default function MusicSection() {
                 <img
                   src="/images/basement-boys.jpg"
                   alt="The Basement Boys"
-                  style={{ width: "60px", height: "60px", objectFit: "cover" }}
+                  style={{ width: "90px", height: "90px", objectFit: "cover" }}
                 />
               </div>
               <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
