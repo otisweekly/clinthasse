@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // Photo gallery - 29 unique images
 const projects = [
   // Black & White Photos
-  { id: 1, title: "Grain Elevator Operator", category: "Portrait", image: "/images/david-eilert.jpg" },
+  { id: 1, title: "Grain Elevator Operator - Walshville, Illinois", category: "Portrait", image: "/images/david-eilert.jpg" },
   { id: 2, title: "The Bicycle Mechanic", category: "Portrait", image: "/images/bicycle-mechanic.jpg" },
   { id: 3, title: "The Radio Host", category: "Portrait", image: "/images/fred-gumaer.jpg" },
   { id: 4, title: "The Steel Guitar Builder", category: "Artisan", image: "/images/steel-guitar-builder.jpg" },
