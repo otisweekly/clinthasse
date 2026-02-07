@@ -199,21 +199,9 @@ export default function Hero() {
         @media (max-width: 768px) {
           .hero-image-container {
             width: 100% !important;
-            position: relative !important;
           }
-          .hero-image-container::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.75);
-            pointer-events: none;
-            z-index: 2;
-          }
-          .hero-content {
-            z-index: 10 !important;
+          .hero-image-container img {
+            filter: brightness(0.4);
           }
           .hero-nav {
             display: none !important;
@@ -224,6 +212,8 @@ export default function Hero() {
             justify-content: flex-end !important;
             padding-top: 0 !important;
             padding-bottom: 120px !important;
+            position: relative !important;
+            z-index: 10 !important;
           }
           .hero-tagline {
             font-size: 2.25rem !important;
