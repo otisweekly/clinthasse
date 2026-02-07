@@ -231,6 +231,26 @@ export default function MusicSection() {
                 <span>→</span>
               </a>
             </div>
+
+            {/* In the Rain */}
+            <div style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid #222" }}>
+              <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem", color: "#d4b896" }}>
+                In the Rain
+              </h4>
+              <p style={{ color: "#888", fontSize: "0.875rem", marginBottom: "1rem" }}>
+                Written and performed by Clint and The Sappingtones
+              </p>
+              <audio
+                controls
+                style={{
+                  width: "100%",
+                  height: "40px",
+                }}
+              >
+                <source src="/audio/in-the-rain.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
           </motion.div>
         </div>
       </div>
