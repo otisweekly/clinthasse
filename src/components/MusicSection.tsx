@@ -260,9 +260,16 @@ export default function MusicSection() {
 
             {/* Won't You Come On Over Ruby */}
             <div style={{ marginTop: "2rem" }}>
-              <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem", color: "#d4b896" }}>
-                Won't You Come On Over Ruby
-              </h4>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "0.5rem" }}>
+                <h4 className="font-display" style={{ fontSize: "1.25rem", color: "#d4b896", margin: 0 }}>
+                  Won't You Come On Over Ruby
+                </h4>
+                <img
+                  src="/images/basement-boys.jpg"
+                  alt="The Basement Boys"
+                  style={{ width: "60px", height: "60px", objectFit: "cover" }}
+                />
+              </div>
               <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
                 Written and performed by Clint and The Basement Boys
               </p>
