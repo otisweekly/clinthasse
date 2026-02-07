@@ -232,10 +232,13 @@ export default function MusicSection() {
               </a>
             </div>
 
-            {/* In the Rain */}
+            {/* Other Original Music */}
             <div style={{ marginTop: "3rem", paddingTop: "2rem", borderTop: "1px solid #222" }}>
-              <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>
-                <span style={{ color: "#888" }}>Other Music:</span> <span style={{ color: "#d4b896" }}>In the Rain</span>
+              <p style={{ color: "#888", fontSize: "1.25rem", marginBottom: "1.5rem" }}>
+                Other Original Music
+              </p>
+              <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem", color: "#d4b896" }}>
+                In the Rain
               </h4>
               <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
                 Written and performed by Clint and The Sappingtones
