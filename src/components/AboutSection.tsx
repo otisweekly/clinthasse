@@ -109,6 +109,29 @@ export default function AboutSection() {
                 Clint enjoyed 16+ years with 5 On Your Side KSDK/TEGNA conceiving, writing and producing broadcast and digital campaigns. Previously, at KMOX Radio Clint worked in sales, sales management, talk show host and voiceover artist. Clint brings decades of experience in ideation, writing, producing, musical image/jingle creation and voiceover work.
               </p>
 
+              {/* Commercial Messaging Example */}
+              <div style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+                <p style={{ color: "#888", fontSize: "1rem", marginBottom: "1rem" }}>
+                  Commercial Messaging example: Conceived, written, produced and voiced by Clint
+                </p>
+                <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/lHwx-WGJWNk"
+                    title="Commercial Messaging Example"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      border: "none",
+                    }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
               <p style={{ color: "#ccc", lineHeight: 1.7, marginBottom: "1.25rem", fontSize: "1.1rem" }}>
                 Clint is a lifelong guitarist, vocalist and songwriter. Listen to his album INSIDE NASHVILLE released in 2017 on{" "}
                 <a
