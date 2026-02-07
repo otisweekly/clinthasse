@@ -103,10 +103,10 @@ export default function MusicSection() {
               <span
                 style={{
                   position: "absolute",
-                  bottom: "8px",
-                  left: "8px",
-                  fontSize: "0.6rem",
-                  color: "rgba(255,255,255,0.7)",
+                  bottom: "4px",
+                  left: "4px",
+                  fontSize: "0.5rem",
+                  color: "#ffffff",
                 }}
               >
                 Album Cover Art by Rena Hasse
