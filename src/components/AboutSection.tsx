@@ -157,6 +157,16 @@ export default function AboutSection() {
               <p style={{ color: "#ccc", lineHeight: 1.7, fontSize: "1.1rem" }}>
                 As a photographer, Clint specializes in portraiture and in particular, environmental portraiture. This is where the subject is captured in their own private space doing what they love to do; offering insights into their humanity and triggering contemplation of your own pursuits. This is what it means to be human.
               </p>
+
+              <img
+                src="/images/dexter-silvers.jpg"
+                alt="Dexter Silvers - Environmental Portrait"
+                style={{
+                  width: "150px",
+                  height: "auto",
+                  marginTop: "1.5rem",
+                }}
+              />
             </div>
 
             {/* Quote */}
