@@ -240,9 +240,16 @@ export default function MusicSection() {
               <p style={{ color: "#c41e3a", fontSize: "1.25rem", marginBottom: "1.5rem" }}>
                 More Original Music
               </p>
-              <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem", color: "#d4b896" }}>
-                In the Rain
-              </h4>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "0.5rem" }}>
+                <h4 className="font-display" style={{ fontSize: "1.25rem", color: "#d4b896", margin: 0 }}>
+                  In the Rain
+                </h4>
+                <img
+                  src="/images/sappingtones.jpg"
+                  alt="The SappingTones"
+                  style={{ width: "90px", height: "90px", objectFit: "cover" }}
+                />
+              </div>
               <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
                 Written and performed by Clint and The SappingTones
               </p>
