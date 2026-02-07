@@ -212,7 +212,11 @@ export default function Hero() {
             justify-content: flex-end !important;
             padding-top: 0 !important;
             padding-bottom: 120px !important;
-            position: relative !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
             z-index: 10 !important;
           }
           .hero-tagline {
