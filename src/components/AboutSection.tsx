@@ -144,6 +144,16 @@ export default function AboutSection() {
                 </a>.
               </p>
 
+              <img
+                src="/images/inside-nashville-cover.jpg"
+                alt="Inside Nashville Album Cover"
+                style={{
+                  width: "200px",
+                  height: "auto",
+                  marginBottom: "1.5rem",
+                }}
+              />
+
               <p style={{ color: "#ccc", lineHeight: 1.7, fontSize: "1.1rem" }}>
                 As a photographer, Clint specializes in portraiture and in particular, environmental portraiture. This is where the subject is captured in their own private space doing what they love to do; offering insights into their humanity and triggering contemplation of your own pursuits. This is what it means to be human.
               </p>
