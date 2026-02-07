@@ -294,9 +294,16 @@ export default function MusicSection() {
 
             {/* The Arabesque */}
             <div style={{ marginTop: "2rem" }}>
-              <h4 className="font-display" style={{ fontSize: "1.25rem", marginBottom: "0.5rem", color: "#d4b896" }}>
-                The Arabesque
-              </h4>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "0.5rem" }}>
+                <h4 className="font-display" style={{ fontSize: "1.25rem", color: "#d4b896", margin: 0 }}>
+                  The Arabesque
+                </h4>
+                <img
+                  src="/images/swing-deville-band.jpg"
+                  alt="Swing DeVille"
+                  style={{ width: "90px", height: "90px", objectFit: "cover" }}
+                />
+              </div>
               <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
                 Written and performed by Clint and Swing DeVille
               </p>
