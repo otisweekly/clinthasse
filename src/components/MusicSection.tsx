@@ -247,7 +247,7 @@ export default function MusicSection() {
                 <img
                   src="/images/sappingtones.jpg"
                   alt="The SappingTones"
-                  style={{ width: "90px", height: "90px", objectFit: "cover" }}
+                  style={{ width: "90px", height: "auto" }}
                 />
               </div>
               <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
@@ -274,7 +274,7 @@ export default function MusicSection() {
                 <img
                   src="/images/basement-boys.jpg"
                   alt="The Basement Boys"
-                  style={{ width: "90px", height: "90px", objectFit: "cover" }}
+                  style={{ width: "90px", height: "auto" }}
                 />
               </div>
               <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
@@ -301,7 +301,7 @@ export default function MusicSection() {
                 <img
                   src="/images/swing-deville-band.jpg"
                   alt="Swing DeVille"
-                  style={{ width: "90px", height: "90px", objectFit: "cover" }}
+                  style={{ width: "90px", height: "auto" }}
                 />
               </div>
               <p style={{ color: "#888", fontSize: "1.1rem", marginBottom: "1rem" }}>
