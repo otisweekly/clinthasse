@@ -112,7 +112,7 @@ export default function AboutSection() {
               {/* Marty Stuart Interview */}
               <div style={{ marginTop: "2rem", marginBottom: "2rem", maxWidth: "400px" }}>
                 <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem", fontWeight: "bold" }}>
-                  Interview with Country Music performer, impresario, ambassador and historian{" "}
+                  ON AIR Interview with Country Music performer, impresario, ambassador and historian{" "}
                   <a
                     href="https://www.countrymusichalloffame.org/hall-of-fame/marty-stuart"
                     target="_blank"
