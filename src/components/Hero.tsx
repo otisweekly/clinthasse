@@ -82,7 +82,7 @@ export default function Hero() {
             }}
           >
             {[
-              { label: "Work", href: "#work" },
+              { label: "Photography", href: "#work" },
               { label: "Music", href: "#music" },
               { label: "About", href: "#about" },
               { label: "Contact", href: "#contact" },
