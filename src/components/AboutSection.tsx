@@ -110,8 +110,8 @@ export default function AboutSection() {
               </p>
 
               {/* Commercial Messaging Example */}
-              <div style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-                <p style={{ color: "#888", fontSize: "1rem", marginBottom: "1rem" }}>
+              <div style={{ marginTop: "2rem", marginBottom: "2rem", maxWidth: "400px" }}>
+                <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem" }}>
                   Commercial Messaging example: Conceived, written, produced and voiced by Clint
                 </p>
                 <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
