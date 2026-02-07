@@ -152,6 +152,23 @@ export default function Footer() {
                   <li>Photography</li>
                   <li>Live Performance</li>
                 </ul>
+
+                {/* Musical Image Example */}
+                <div style={{ marginTop: "1.5rem" }}>
+                  <p style={{ color: "#888", fontSize: "0.875rem", marginBottom: "0.75rem" }}>
+                    Musical Image Example: Conceived, written and performed by Clint and The Sappingtones
+                  </p>
+                  <audio
+                    controls
+                    style={{
+                      width: "100%",
+                      height: "40px",
+                    }}
+                  >
+                    <source src="/audio/skys-the-limit.wav" type="audio/wav" />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
               </div>
 
               {/* Connect */}
