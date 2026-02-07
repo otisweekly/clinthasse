@@ -210,6 +210,10 @@ export default function Hero() {
             bottom: 0;
             background: rgba(0, 0, 0, 0.75);
             pointer-events: none;
+            z-index: 2;
+          }
+          .hero-content {
+            z-index: 10 !important;
           }
           .hero-nav {
             display: none !important;
