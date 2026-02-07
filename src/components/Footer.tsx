@@ -116,7 +116,7 @@ export default function Footer() {
                     Swing DeVille
                   </p>
                   <p style={{ color: "#888", fontSize: "0.875rem", marginBottom: "1rem" }}>
-                    St. Louis Gypsy Jazz Ensemble
+                    St. Louis Jazz Manouche Ensemble
                   </p>
                   <img
                     src="/images/swing-deville.jpg"
