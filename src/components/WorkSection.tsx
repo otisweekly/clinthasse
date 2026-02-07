@@ -29,14 +29,14 @@ const projects = [
   // Color Photos
   { id: 21, title: "Donut Drive-In", category: "Landscape", image: "/images/donut-drive-in.jpg" },
   { id: 22, title: "MacArthur at Twilight", category: "Photography", image: "/images/macarthur-twilight.jpg" },
-  { id: 23, title: "Sam Licata at Work", category: "Portrait", image: "/images/sam-licata.jpg" },
+  { id: 23, title: "Sam Licata at Work - The Hill", category: "Portrait", image: "/images/sam-licata.jpg" },
   { id: 24, title: "Bicycle Men of the Hill", category: "Portrait", image: "/images/bicycle-men-of-the-hill.jpg" },
   { id: 25, title: "The Automotive Mechanic", category: "Portrait", image: "/images/ray-at-bl.jpg" },
   { id: 26, title: "Walter and Christie Carter - Nashville", category: "Portrait", image: "/images/walter-and-christie.jpg" },
-  { id: 27, title: "Vince DiRaimondo", category: "Portrait", image: "/images/vince.jpg" },
+  { id: 27, title: "Vince DiRaimondo - The Hill", category: "Portrait", image: "/images/vince.jpg" },
   { id: 28, title: "Visions of Chouteau's Landing", category: "Landscape", image: "/images/chouteaus-landing.jpg" },
-  { id: 29, title: "David and Larry", category: "Portrait", image: "/images/david-and-larry.jpg" },
-  { id: 30, title: "Michael Santangelo", category: "Portrait", image: "/images/michael-santangelo.jpg" },
+  { id: 29, title: "David and Larry - The Hill", category: "Portrait", image: "/images/david-and-larry.jpg" },
+  { id: 30, title: "Michael Santangelo - The Hill", category: "Portrait", image: "/images/michael-santangelo.jpg" },
 ];
 
 export default function WorkSection() {
