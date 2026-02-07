@@ -123,7 +123,7 @@ export default function Footer() {
                     alt="Swing DeVille - Spectator Swing"
                     style={{
                       width: "100%",
-                      maxWidth: "200px",
+                      maxWidth: "120px",
                       height: "auto",
                     }}
                   />
