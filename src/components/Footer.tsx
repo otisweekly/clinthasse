@@ -236,6 +236,14 @@ export default function Footer() {
           >
             Clint Hasse
           </a>
+          <img
+            src="/images/clint-rolleiflex-bw.jpg"
+            alt="Clint Hasse with Rolleiflex"
+            style={{
+              width: "80px",
+              height: "auto",
+            }}
+          />
           <p style={{ color: "#555", fontSize: "0.75rem" }}>
             © {year} All rights reserved
           </p>
