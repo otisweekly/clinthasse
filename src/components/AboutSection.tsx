@@ -111,7 +111,7 @@ export default function AboutSection() {
 
               {/* Musical Image Example */}
               <div style={{ marginTop: "2rem", marginBottom: "2rem", maxWidth: "400px" }}>
-                <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem" }}>
+                <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem", fontWeight: "bold" }}>
                   Musical Image Example: Conceived, written and performed by Clint and The Sappingtones
                 </p>
                 <audio
@@ -128,7 +128,7 @@ export default function AboutSection() {
 
               {/* Commercial Messaging Example */}
               <div style={{ marginTop: "2rem", marginBottom: "2rem", maxWidth: "400px" }}>
-                <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem" }}>
+                <p style={{ color: "#888", fontSize: "0.9rem", marginBottom: "0.75rem", fontWeight: "bold" }}>
                   Commercial Messaging Example: Conceived, written, produced and voiced by Clint
                 </p>
                 <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
