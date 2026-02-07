@@ -115,9 +115,18 @@ export default function Footer() {
                   <p className="font-display" style={{ fontSize: "1.125rem", marginBottom: "0.25rem" }}>
                     Swing DeVille
                   </p>
-                  <p style={{ color: "#888", fontSize: "0.875rem" }}>
+                  <p style={{ color: "#888", fontSize: "0.875rem", marginBottom: "1rem" }}>
                     St. Louis Gypsy Jazz Ensemble
                   </p>
+                  <img
+                    src="/images/swing-deville.jpg"
+                    alt="Swing DeVille - Spectator Swing"
+                    style={{
+                      width: "100%",
+                      maxWidth: "200px",
+                      height: "auto",
+                    }}
+                  />
                 </div>
               </div>
 
