@@ -199,7 +199,7 @@ export default function Hero() {
         @media (max-width: 768px) {
           .hero-image-container {
             width: 100% !important;
-            opacity: 0.3;
+            opacity: 0.2;
           }
           .hero-nav {
             display: none !important;
