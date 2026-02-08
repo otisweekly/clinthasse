@@ -106,7 +106,7 @@ export default function MusicSection() {
                 fontSize: "10px",
                 color: "#888",
                 textAlign: "right",
-                marginTop: "0.25rem",
+                marginTop: "4px",
                 marginBottom: "1.5rem",
               }}
             >
