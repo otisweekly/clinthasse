@@ -104,7 +104,7 @@ export default function MusicSection() {
             <p
               style={{
                 fontSize: "10px",
-                color: "#888",
+                color: "#bbb",
                 textAlign: "right",
                 marginTop: "4px",
                 marginBottom: "2rem",
