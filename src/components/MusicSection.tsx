@@ -83,7 +83,7 @@ export default function MusicSection() {
               style={{
                 aspectRatio: "1",
                 background: "#111",
-                marginBottom: "2rem",
+                marginBottom: "0",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -106,8 +106,8 @@ export default function MusicSection() {
                 fontSize: "10px",
                 color: "#888",
                 textAlign: "right",
-                marginTop: "0",
-                marginBottom: "1.5rem",
+                marginTop: "4px",
+                marginBottom: "2rem",
               }}
             >
               Album Cover Art by Rena Hasse
