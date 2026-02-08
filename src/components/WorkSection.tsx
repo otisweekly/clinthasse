@@ -34,9 +34,9 @@ const projects = [
   { id: 25, title: "The Automotive Mechanic", category: "Portrait", image: "/images/ray-at-bl.jpg" },
   { id: 26, title: "Walter and Christie Carter - Nashville", category: "Portrait", image: "/images/walter-and-christie.jpg" },
   { id: 27, title: "Vince DiRaimondo - The Hill", category: "Portrait", image: "/images/vince.jpg" },
-  { id: 28, title: "Visions of Chouteau's Landing", category: "Landscape", image: "/images/chouteaus-landing.jpg" },
+  { id: 28, title: "Michael Santangelo - The Hill", category: "Portrait", image: "/images/michael-santangelo.jpg" },
   { id: 29, title: "David and Larry - The Hill", category: "Portrait", image: "/images/david-and-larry.jpg" },
-  { id: 30, title: "Michael Santangelo - The Hill", category: "Portrait", image: "/images/michael-santangelo.jpg" },
+  { id: 30, title: "Visions of Chouteau's Landing", category: "Landscape", image: "/images/chouteaus-landing.jpg" },
 ];
 
 export default function WorkSection() {
