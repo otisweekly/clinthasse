@@ -110,7 +110,7 @@ export default function MusicSection() {
                 marginBottom: "2rem",
               }}
             >
-              Album Cover Art by Rena Hasse
+              Album cover art by Rena Hasse
             </p>
 
             <p
