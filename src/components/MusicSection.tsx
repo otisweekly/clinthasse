@@ -100,21 +100,18 @@ export default function MusicSection() {
                   objectFit: "cover",
                 }}
               />
-              <span
-                style={{
-                  position: "absolute",
-                  bottom: "20px",
-                  left: "10px",
-                  fontSize: "10px",
-                  color: "#ffffff",
-                  background: "rgba(0,0,0,0.6)",
-                  padding: "4px 8px",
-                  zIndex: 100,
-                }}
-              >
-                Album Cover Art by Rena Hasse
-              </span>
             </div>
+            <p
+              style={{
+                fontSize: "10px",
+                color: "#888",
+                textAlign: "right",
+                marginTop: "0.5rem",
+                marginBottom: "1.5rem",
+              }}
+            >
+              Album Cover Art by Rena Hasse
+            </p>
 
             <p
               style={{
